@@ -1,0 +1,106 @@
+/*HEADER*/
+
+#header {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('src/assets/img/0-head.webp');
+  background-color: #000;
+  background-size: cover;
+  background-position: 18% 18%;
+  opacity: 1;
+  z-index: -1;
+  color: #fff;
+}
+
+.head-bg {
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.slogan {
+  box-sizing: border-box;
+  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  margin-top: 0px;
+  padding-top: 6%;
+  text-transform: uppercase;
+  padding-left: 8%;
+  width: 50%;
+  display: inline-block;
+}
+
+.language {
+  box-sizing: border-box;
+  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  float: right;
+  padding-right: 8%;
+  padding-top: 6%;
+}
+
+.headText {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  padding-left: 8%;
+}
+
+.headText h1 {
+  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 7rem;
+  margin: 0px;
+}
+
+.headText h2 {
+  font-family: 'D-DIN', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 3rem;
+  margin-top: 3%;
+}
+
+.knowMe {
+  font-size: 1.8rem;
+  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  background-color: #A5241F;
+  color: #fff;
+  padding: 2% 4%;
+  border: none;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.75);
+}
+
+.knowMe:hover {
+  background-color: #94221e;
+}
+
+@media (max-width: 780px) {
+
+  #header {
+    background-position: 50% 50%;
+  }
+  .headText {
+    padding-left: 4%;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .headText h1 {
+    font-size: 4rem;
+  }
+
+  .headText h2 {
+    font-size: 2rem;
+  }
+
+  .knowMe {
+    font-size: 1.5rem;
+  }
+}
