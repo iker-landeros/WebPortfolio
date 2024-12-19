@@ -7,10 +7,17 @@ const Header = () => {
             <div class="headTop">
                 <p class="slogan">Aspira e inspira</p>
                 <div class="language">
-                    <select name="language" class="language">
-                        <option value="es">es</option>
-                        <option value="en">en</option>
-                    </select>
+                    <div class="current-language" id="currentLanguage">
+                        <img src="src/assets/img/0-flagMX.svg" alt="ES" class="flag"/>
+                        <span>es</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="language-options" id="languageOptions">
+                        <div class="language-option" data-lang="EN">
+                            <img src="src/assets/img/0-flagUSA.svg" alt="EN" class="flag"/>
+                            <span>es</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             

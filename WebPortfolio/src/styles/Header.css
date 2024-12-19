@@ -22,26 +22,25 @@
   color: #fff;
 }
 
-.slogan {
+.headTop {
   box-sizing: border-box;
-  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 8%;
   font-size: 2rem;
-  margin-top: 0px;
-  padding-top: 6%;
   text-transform: uppercase;
-  padding-left: 8%;
-  width: 50%;
-  display: inline-block;
+}
+.slogan {
+  font-weight: 700;
 }
 
 .language {
-  box-sizing: border-box;
-  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
-  font-size: 2rem;
-  display: inline-block;
-  float: right;
-  padding-right: 8%;
-  padding-top: 6%;
+  align-items: right;
+}
+
+.language img {
+  height: 2rem;
+  margin-right: 1rem;
 }
 
 .headText {
