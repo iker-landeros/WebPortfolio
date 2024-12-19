@@ -10,7 +10,7 @@ const Header = () => {
                     <div class="current-language" id="currentLanguage">
                         <img src="src/assets/img/0-flagMX.svg" alt="ES" class="flag"/>
                         <span>es</span>
-                        <span class="arrow">▼</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="language-options" id="languageOptions">
                         <div class="language-option" data-lang="EN">

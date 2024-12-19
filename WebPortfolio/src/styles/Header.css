@@ -36,11 +36,31 @@
 
 .language {
   align-items: right;
+  justify-content: flex-end;
 }
 
 .language img {
   height: 2rem;
   margin-right: 1rem;
+}
+
+.language i {
+  margin-left: 1rem;
+}
+
+.language-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+}
+
+.current-language {
+  display: flex;
+  align-items: center;
 }
 
 .headText {
