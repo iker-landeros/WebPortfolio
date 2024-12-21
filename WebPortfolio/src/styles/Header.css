@@ -32,20 +32,33 @@
 }
 .slogan {
   font-weight: 700;
+  font-family: 'D-DIN Bold';
+  margin: 0;
 }
 
 .language {
   align-items: right;
   justify-content: flex-end;
+  cursor: pointer;
+}
+
+.language span{
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
 }
 
 .language img {
-  height: 2rem;
-  margin-right: 1rem;
+  width: 2rem;
 }
 
-.language i {
-  margin-left: 1rem;
+.current-language {
+  display: flex;
+  align-items: center;
+}
+
+.current-language i {
+  font-size: 1rem;
+  rotate: 90deg;
 }
 
 .language-options {
@@ -54,11 +67,6 @@
 }
 
 .language-option {
-  display: flex;
-  align-items: center;
-}
-
-.current-language {
   display: flex;
   align-items: center;
 }
