@@ -66,14 +66,14 @@ const Header = () => {
                     <a href="https://www.linkedin.com/in/ikerlanderos/" target="_blank" class="linkedin">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.facebook.com/ikerlanderos" target="_blank" class="facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ikerlanderos/" target="_blank" class="instagram">
+                    <a href="https://www.instagram.com/iker_landeros/" target="_blank" class="instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://twitter.com/ikerlanderos" target="_blank" class="twitter">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://www.tiktok.com/@iker_landeros" target="_blank" class="tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://generacioninspire.com/" target="_blank" class="twitter">
+                        <i href="src\assets\logos\0logoInsigniaGenINSPIRE.svg" alt="Generaci&oacute;n INSPIRE"></i>
                     </a>
                 </div>
 
