@@ -60,6 +60,27 @@ const Header = () => {
                 <h2>Fundador, conferencista y educador</h2>
                 <button class="knowMe">Con&oacute;ceme</button>
             </div>
+
+            <div class="headBottom">
+                <div class="socialButtons">
+                    <a href="https://www.linkedin.com/in/ikerlanderos/" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ikerlanderos" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ikerlanderos/" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/ikerlanderos" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="codePortfolio">
+                    <a href="">{">>> Conoce mi parte nerd"}</a>
+                </div>
+            </div>
         </div>
     </section>
     );

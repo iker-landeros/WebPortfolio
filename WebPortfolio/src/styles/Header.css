@@ -16,17 +16,20 @@
 }
 
 .head-bg {
+  box-sizing: border-box;
   height: 100vh;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
+  padding: 3% 3%;
 }
 
+/* ------- Header Top ------- */
 .headTop {
   box-sizing: border-box;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
-  padding: 3% 8%;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -92,12 +95,14 @@
   align-items: center;
 }
 
+/* ------- Header Middle Text ------- */
 .headText {
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-40%);
-  padding-left: 8%;
+  box-sizing: border-box;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .headText h1 {
@@ -113,6 +118,7 @@
 }
 
 .knowMe {
+  width:fit-content;
   font-size: 1.8rem;
   font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
   text-transform: uppercase;
@@ -127,11 +133,27 @@
   background-color: #94221e;
 }
 
+/* ------- Header Bottom ------- */
+.headBottom {
+  box-sizing: border-box;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  font-size: 1.5rem;
+  padding: 1% 0;
+}
+
 @media (max-width: 780px) {
 
   #header {
     background-position: 50% 50%;
   }
+
+  .head-bg {
+    padding: 6% 8%;
+  }
+
   .headText {
     padding-left: 4%;
   }
