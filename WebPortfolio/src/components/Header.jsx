@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import '../styles/Header.css'
 
 const Header = () => {
@@ -9,17 +9,31 @@ const Header = () => {
     }
 
     const [isLanguageOptionsVisible, setIsLanguageOptionsVisible] = useState(false);
+    const languageRef = useRef(null);
 
     const toggleLanguageOptions = () => {
         setIsLanguageOptionsVisible(!isLanguageOptionsVisible);
     };
+
+    const handleClickOutside = (event) => {
+        if (languageRef.current && !languageRef.current.contains(event.target)) {
+            setIsLanguageOptionsVisible(false); // Cierra la lista si el clic fue fuera del contenedor
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <section id="header">
         <div class="head-bg">
             <div class="headTop">
                 <p class="slogan">Aspira e inspira</p>
-                <div class="language">
+                <div class="language" ref={languageRef}>
                     <div
                         class="current-language"
                         id="currentLanguage"
@@ -27,16 +41,17 @@ const Header = () => {
                     >
                         <img src="src/assets/img/0-flagMX.svg" alt="ES" class="flag"/>
                         <span>es</span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class={`fa-solid fa-chevron-down ${isLanguageOptionsVisible ? 'visible' : ''}`}></i>
                     </div>
-                    {isLanguageOptionsVisible && (
-                        <div class="language-options" id="languageOptions">
-                            <div class="language-option" data-lang="EN">
-                                <img src="src/assets/img/0-flagUSA.svg" alt="EN" class="flag"/>
-                                <span>es</span>
-                            </div>
+                    <div
+                        class={`language-options ${isLanguageOptionsVisible ? 'visible' : ''}`}
+                        id="languageOptions"
+                    >
+                        <div class="language-option" data-lang="EN">
+                            <img src="src/assets/img/0-flagUSA.svg" alt="EN" class="flag"/>
+                            <span>en</span>
                         </div>
-                    )}
+                    </div>                 
                 </div>
             </div>
             

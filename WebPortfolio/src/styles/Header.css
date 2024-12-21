@@ -39,7 +39,6 @@
 .language {
   align-items: right;
   justify-content: flex-end;
-  cursor: pointer;
 }
 
 .language span{
@@ -54,16 +53,38 @@
 .current-language {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .current-language i {
   font-size: 1rem;
   rotate: 90deg;
+  transition: rotate 0.3s ease;
+}
+
+.current-language i.visible {
+  rotate: 0deg;
 }
 
 .language-options {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: opacity 0.8s ease, transform 0.3s ease;
+}
+
+.language-options.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.language-options:not(.visible) {
+  transition: opacity 0.4s ease, transform 1s ease, visibility 0s linear 0.3s;
+  cursor: default;
 }
 
 .language-option {
