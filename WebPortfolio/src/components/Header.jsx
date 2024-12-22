@@ -73,7 +73,7 @@ const Header = () => {
                         <i class="fab fa-tiktok"></i>
                     </a>
                     <a href="https://generacioninspire.com/" target="_blank" class="twitter">
-                        <i href="src\assets\logos\0logoInsigniaGenINSPIRE.svg" alt="Generaci&oacute;n INSPIRE"></i>
+                    <img src="src\assets\logos\0logoInsigniaGenINSPIRE.svg" alt="Generación INSPIRE" class="genInspire"/>
                     </a>
                 </div>
 

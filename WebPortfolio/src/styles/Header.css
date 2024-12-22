@@ -135,20 +135,48 @@
 
 /* ------- Header Bottom ------- */
 .headBottom {
+  position: absolute; /* Posiciona el contenedor */
+  bottom: 2rem; /* Márgen inferior fijo */
+  right: 3rem; /* Márgen derecho fijo */
   box-sizing: border-box;
-  height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: right;
-  float: right;
+  align-items: flex-end; /* Alinea los elementos a la derecha */
   font-size: 1.5rem;
-  padding: 1% 0;
+  padding: 0;
 }
 
 .socialButtons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 1rem;
+}
+
+.socialButtons a {
+  box-sizing: border-box;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3.5rem;
+}
+
+/* same style for .socialButtons img and i tags */
+.socialButtons img, .socialButtons i {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  color: #fff;
+  fill: #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.codePortfolio a {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: 'Consolas', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 @media (max-width: 780px) {
@@ -175,5 +203,25 @@
 
   .knowMe {
     font-size: 1.5rem;
+  }
+
+  .headBottom {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .socialButtons{
+    justify-content: center; /* Botones centrados */
+    gap: 0.5rem; /* Reduce el espacio entre botones */
+  }
+
+  .socialButtons a {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .codePortfolio a {
+    font-size: 1.3rem;
   }
 }

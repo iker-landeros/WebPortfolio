@@ -1,25 +1,10 @@
 <svg id="Cuadrado" xmlns="http://www.w3.org/2000/svg" width="628" height="776" viewBox="0 0 628 776">
   <defs>
     <style>
-      .cls-1 {
-        fill: #3b3d3c;
-      }
-
       .cls-1, .cls-2, .cls-3, .cls-4 {
-        fill-rule: evenodd;
-      }
-
-      .cls-2 {
-        fill: #f6c646;
-      }
-
-      .cls-3 {
-        fill: #308ac9;
-      }
-
-      .cls-4 {
-        fill: #a5241f;
-      }
+    fill: #fff;
+    fill-rule: evenodd;
+  }
     </style>
   </defs>
   <path id="Cuadrado-2" data-name="Cuadrado" class="cls-1" d="M91,776.344H511V-0.022H91V776.344Zm23-24.98H488V25.957H114V751.364Z"/>
