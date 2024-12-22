@@ -1,84 +1,45 @@
-import React, { useState, useRef, useEffect } from 'react';
-import '../styles/Header.css'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import './language-selector.jsx';
+import '../styles/Header.css';
+import LanguageSelector from './language-selector.jsx';
 
 const Header = () => {
-    const [language, setLanguage] = useState('es');
-
-    const changeLanguage = (lang) => {
-        setLanguage(lang);
-    }
-
-    const [isLanguageOptionsVisible, setIsLanguageOptionsVisible] = useState(false);
-    const languageRef = useRef(null);
-
-    const toggleLanguageOptions = () => {
-        setIsLanguageOptionsVisible(!isLanguageOptionsVisible);
-    };
-
-    const handleClickOutside = (event) => {
-        if (languageRef.current && !languageRef.current.contains(event.target)) {
-            setIsLanguageOptionsVisible(false); // Cierra la lista si el clic fue fuera del contenedor
-        }
-    };
-
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
+    const { t } = useTranslation();
 
     return (
         <section id="header">
-        <div class="head-bg">
-            <div class="headTop">
-                <p class="slogan">Aspira e inspira</p>
-                <div class="language" ref={languageRef}>
-                    <div
-                        class="current-language"
-                        id="currentLanguage"
-                        onClick={toggleLanguageOptions}    
-                    >
-                        <img src="src/assets/img/0-flagMX.svg" alt="ES" class="flag"/>
-                        <span>es</span>
-                        <i class={`fa-solid fa-chevron-down ${isLanguageOptionsVisible ? 'visible' : ''}`}></i>
-                    </div>
-                    <div
-                        class={`language-options ${isLanguageOptionsVisible ? 'visible' : ''}`}
-                        id="languageOptions"
-                    >
-                        <div class="language-option" data-lang="EN">
-                            <img src="src/assets/img/0-flagUSA.svg" alt="EN" class="flag"/>
-                            <span>en</span>
-                        </div>
-                    </div>                 
-                </div>
+        <div className="head-bg">
+            <div className="headTop">
+                <p className="slogan">{t("slogan")}</p>
+                <LanguageSelector />
+
             </div>
             
-            <div class="headText">
+            <div className="headText">
                 <h1>Iker Landeros</h1>
-                <h2>Fundador, conferencista y educador</h2>
-                <button class="knowMe">Con&oacute;ceme</button>
+                <h2>{t("ikerTitle")}</h2>
+                <button className="knowMe">{t("knowMe")}</button>
             </div>
 
-            <div class="headBottom">
-                <div class="socialButtons">
-                    <a href="https://www.linkedin.com/in/ikerlanderos/" target="_blank" class="linkedin">
-                        <i class="fab fa-linkedin-in"></i>
+            <div className="headBottom">
+                <div className="socialButtons">
+                    <a href="https://www.linkedin.com/in/ikerlanderos/" target="_blank" className="linkedin">
+                        <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.instagram.com/iker_landeros/" target="_blank" class="instagram">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/iker_landeros/" target="_blank" className="instagram">
+                        <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@iker_landeros" target="_blank" class="tiktok">
-                        <i class="fab fa-tiktok"></i>
+                    <a href="https://www.tiktok.com/@iker_landeros" target="_blank" className="tiktok">
+                        <i className="fab fa-tiktok"></i>
                     </a>
-                    <a href="https://generacioninspire.com/" target="_blank" class="twitter">
-                    <img src="src\assets\logos\0logoInsigniaGenINSPIRE.svg" alt="Generación INSPIRE" class="genInspire"/>
+                    <a href="https://generacioninspire.com/" target="_blank" className="genInspire">
+                    <img src="src\assets\logos\0logoInsigniaGenINSPIRE.svg" alt="Generación INSPIRE" className="genInspire"/>
                     </a>
                 </div>
 
-                <div class="codePortfolio">
-                    <a href="">{">>> Conoce mi parte nerd"}</a>
+                <div className="codePortfolio">
+                    <a href="">{t("codePortfolio")}</a>
                 </div>
             </div>
         </div>

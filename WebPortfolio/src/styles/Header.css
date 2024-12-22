@@ -32,67 +32,12 @@
   justify-content: space-between;
   font-size: 2rem;
   text-transform: uppercase;
+  overflow: visible;
 }
 .slogan {
   font-weight: 700;
   font-family: 'D-DIN Bold';
   margin: 0;
-}
-
-.language {
-  align-items: right;
-  justify-content: flex-end;
-}
-
-.language span{
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
-}
-
-.language img {
-  width: 2rem;
-}
-
-.current-language {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.current-language i {
-  font-size: 1rem;
-  rotate: 90deg;
-  transition: rotate 0.3s ease;
-}
-
-.current-language i.visible {
-  rotate: 0deg;
-}
-
-.language-options {
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-30px);
-  transition: opacity 0.8s ease, transform 0.3s ease;
-}
-
-.language-options.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  cursor: pointer;
-}
-
-.language-options:not(.visible) {
-  transition: opacity 0.4s ease, transform 1s ease, visibility 0s linear 0.3s;
-  cursor: default;
-}
-
-.language-option {
-  display: flex;
-  align-items: center;
 }
 
 /* ------- Header Middle Text ------- */
@@ -135,13 +80,13 @@
 
 /* ------- Header Bottom ------- */
 .headBottom {
-  position: absolute; /* Posiciona el contenedor */
-  bottom: 2rem; /* Márgen inferior fijo */
-  right: 3rem; /* Márgen derecho fijo */
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Alinea los elementos a la derecha */
+  align-items: flex-end;
   font-size: 1.5rem;
   padding: 0;
 }
@@ -160,7 +105,6 @@
   font-size: 3.5rem;
 }
 
-/* same style for .socialButtons img and i tags */
 .socialButtons img, .socialButtons i {
   width: 100%;
   height: 100%;
@@ -211,8 +155,8 @@
   }
 
   .socialButtons{
-    justify-content: center; /* Botones centrados */
-    gap: 0.5rem; /* Reduce el espacio entre botones */
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   .socialButtons a {
@@ -222,6 +166,6 @@
   }
 
   .codePortfolio a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
