@@ -19,7 +19,9 @@ const Header = () => {
                 <div className="headText">
                     <h1>Iker Landeros</h1>
                     <h2>{t("ikerTitle")}</h2>
-                    <button className="knowMe">{t("knowMe")}</button>
+                    <a href="#about">
+                    <button className="knowMe" >{t("knowMe")}</button>
+                    </a>
                 </div>
 
                 <div className="headBottom">
