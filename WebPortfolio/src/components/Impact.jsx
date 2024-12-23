@@ -6,36 +6,38 @@ const Impact = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="impact" class="impact">
-            <div class="impact-bg">
-                <h3>Impacto en n&uacute;meros</h3>
-                <div class="impactCards">
-                    <div class="impactText">
-                        <i class="fa-solid fa-user-group"></i>
+        <section id="impact" className="impact">
+            <div className="impact-bg">
+                <h3>{t('impactTitle')}</h3>
+                <div className="impactCards">
+                    <div className="impactText">
+                        <i className="fa-solid fa-user-group"></i>
                         <h2>+5,000</h2>
-                        <p>Personas han escuchado mis conferencias</p>
+                        <p>{t('peopleInKeynotes')}</p>
                     </div>
-                    <div class="impactText">
-                        <i class="fa-solid fa-award"></i>
-                        <h2>+30</h2>
-                        <p>Espacios de capacitaci&oacute;n liderados</p>
+                    <div className="impactText">
+                        <i className="fa-solid fa-award"></i>
+                        <h2>+50</h2>
+                        <p>{t('trainingSpaces')}</p>
                     </div>
-                    <div class="impactText">
-                        <i class="fa-solid fa-laptop"></i>
+                    <div className="impactText">
+                        <i className="fa-solid fa-laptop"></i>
                         <h2>+3,500</h2>
-                        <p>Minutos de contenido educativo creado</p>
+                        <p>{t('educationalContent')}</p>
                     </div>
-                    <div class="impactText">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-tiktok"></i>
-                        <i class="fa-brands fa-facebook"></i>
+                    <div className="impactText">
+                        <div className="socialMedia">
+                            <i className="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-tiktok"></i>
+                            <i className="fa-brands fa-facebook"></i>
+                        </div>
                         <h2>+200,000</h2>
-                        <p>Impactos anuales en redes sociales</p>
+                        <p>{t('annualImpacts')}</p>
                     </div>
-                    <div class="impactText">
-                    <i class="fa-solid fa-rocket"></i>
-                        <h2>+10</h2>
-                        <p>Emprendimientos y proyectos de impacto creados</p>
+                    <div className="impactText">
+                    <i className="fa-solid fa-rocket"></i>
+                        <h2>+30</h2>
+                        <p>{t('impactProjects')}</p>
                     </div>
                 </div>
             </div>

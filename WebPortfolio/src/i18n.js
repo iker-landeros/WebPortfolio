@@ -26,6 +26,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 aboutTextLine3Bold: "inspirar a un millón de personas a alcanzar sus sueños ",
                 aboutTextLine3Continue: "con mi empresa, ",
                 aboutTextLine3Bold2: "Generación INSPIRE",
+
+                // Impact
+                impactTitle: "Impacto en números",
+                peopleInKeynotes: "Personas impactadas en conferencias",
+                trainingSpaces: "Espacios de capacitación liderados",
+                educationalContent: "Minutos de contenido educativo creado",
+                annualImpacts: "Impactos anuales en redes sociales",
+                impactProjects: "Emprendimientos y proyectos de impacto creados",
             },
         },
         en: {
@@ -47,6 +55,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 aboutTextLine3Bold: "inspire a million people to reach their dreams ",
                 aboutTextLine3Continue: "with my company, ",
                 aboutTextLine3Bold2: "Generación INSPIRE",
+
+                // Impact
+                impactTitle: "Impact in numbers",
+                peopleInKeynotes: "People impacted in keynotes",
+                trainingSpaces: "Training spaces led",
+                educationalContent: "Minutes of educational content created",
+                annualImpacts: "Annual impacts on social media",
+                impactProjects: "Impactful ventures and projects created",
             },
         },
     },
