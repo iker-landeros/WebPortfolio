@@ -64,15 +64,15 @@ const LanguageSelector = () => {
         {languages
           .filter((lang) => lang.code !== currentLanguage.code)
           .map((lang) => (
-          <div
-            key={lang.code}
-            className="language-option"
-            onClick={() => handleLanguageChange(lang.code)}
-          >
-            <img src={`src/assets/img/${lang.flag}`} alt={lang.code} className="flag" />
-            <span>{lang.code}</span>
-          </div>
-        ))}
+            <div
+              key={lang.code}
+              className="language-option"
+              onClick={() => handleLanguageChange(lang.code)}
+            >
+              <img src={`src/assets/img/${lang.flag}`} alt={lang.code} className="flag" />
+              <span>{lang.code}</span>
+            </div>
+          ))}
       </div>
     </div>
   );
