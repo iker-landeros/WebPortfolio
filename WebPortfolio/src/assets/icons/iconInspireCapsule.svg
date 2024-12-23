@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="245" viewBox="0 0 930 245">
+  <defs>
+    <style>
+      .cls-1 {
+        fill:rgb(255, 255, 255);
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="capsula" data-name="capsula" class="cls-1" d="M122.467-.027H807.986a122.6,122.6,0,1,1,0,245.2H122.467A122.6,122.6,0,1,1,122.467-.027Z"/>
+</svg>

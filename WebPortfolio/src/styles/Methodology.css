@@ -1,0 +1,37 @@
+/*Methodology*/
+
+#methodology {
+  position: relative;
+  padding: 3% 4%;
+  overflow: hidden;
+  background-color: fff;
+
+  /* Background */
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='210' height='140' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='190' height='50' x='0' y='0' rx='30' ry='30' style='fill:%23FCFCFC%3B' /%3E %3Crect width='190' height='50' x='100' y='70' rx='30' ry='30' style='fill:%23FCFCFC%3B' /%3E %3Crect width='190' height='50' x='-100' y='70' rx='30' ry='30' style='fill:%23FCFCFC%3B' /%3E %3C/svg%3E");
+  /* SVG encoded with https://cdpn.io/rrOZQQ */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  animation: animatedBackground 70s linear infinite;
+}
+
+#methodology h3 {
+  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0px;
+  color: #3b3d3c;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
