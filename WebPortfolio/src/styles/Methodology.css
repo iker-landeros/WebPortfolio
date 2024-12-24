@@ -25,6 +25,7 @@
 .methodology-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
@@ -48,6 +49,14 @@
   text-transform: uppercase;
 }
 
+.methodology-item h4 {
+  padding: 1% 7%;
+}
+
+.methodology-item.action h4 {
+  padding: 1% 20%;
+}
+
 .methodology-item.inspiration h4, .methodology-item.inspiration p {
   background-color: #f6c646;
 }
@@ -69,7 +78,39 @@
   margin: 2%;
 }
 
-@media (max-width: 1400px) {
+.methodology-item p:nth-child(odd) {
+  animation: move 4s infinite alternate ease-in-out;
+}
+
+.methodology-item p:nth-child(even) {
+  animation: move 3s infinite alternate ease-in-out;
+}
+
+@media (max-width: 960px) {
+  .methodology-container {
+    justify-content: space-around;
+  }
+
+  .methodology-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 790px) {
+  #methodology h3 {
+    font-size: 7.5vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .methodology-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .methodology-item {
+    width: 80%;
+  }
 
 }
 
@@ -79,5 +120,14 @@
   }
   to {
     background-position: 100% 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3px);
   }
 }

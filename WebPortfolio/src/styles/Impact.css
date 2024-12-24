@@ -84,7 +84,7 @@
 
 @media (max-width: 650px) {
   #impact h3 {
-    font-size: 3rem;
+    font-size: 7.5vw;
   }
 
   .impactText h2 {
@@ -105,10 +105,6 @@
     background-size: 600%;
     background-position: 53% 55%;
     opacity: 0.6; /* Ajusta la opacidad según tus preferencias */
-  }
-
-  #impact h3 {
-    font-size: 2.5rem;
   }
 
   .impactText {
