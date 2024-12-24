@@ -22,6 +22,52 @@
   color: #3b3d3c;
 }
 
+.methodology-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.methodology-item {
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.methodology-item h4, .methodology-container p {
+  color: #fff;
+  background-color: #3b3d3c;
+  padding: 1% 4%;
+  border-radius: 100px;
+  font-weight: bold;
+  font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+}
+
+.methodology-item.inspiration h4, .methodology-item.inspiration p {
+  background-color: #f6c646;
+}
+
+.methodology-item.education h4, .methodology-item.education p {
+  background-color: #308ac9;
+}
+
+.methodology-item.action h4, .methodology-item.action p {
+  background-color: #a5241f;
+}
+
+.methodology-item h4{
+  font-size: 3rem;
+  margin: 3%;
+}
+
+.methodology-item p {
+  margin: 2%;
+}
 
 @media (max-width: 1400px) {
 
