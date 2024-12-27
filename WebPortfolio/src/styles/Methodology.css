@@ -28,11 +28,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .methodology-item {
-  width: 30%;
+  box-sizing: border-box;
+  width: 32%;
   min-width: 250px;
   display: flex;
   flex-direction: column;
@@ -40,6 +41,7 @@
 }
 
 .methodology-item h4, .methodology-item p {
+  box-sizing: border-box;
   color: #fff;
   background-color: #3b3d3c;
   padding: 1% 4%;
@@ -47,7 +49,7 @@
   font-weight: bold;
   font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .methodology-item h4 {
@@ -73,7 +75,7 @@
 .methodology-item h4{
   font-size: 3rem;
   margin: 3%;
-  animation: moveTitles 5s infinite alternate ease-in-out;
+  animation: moveTitles 3s infinite alternate ease-in-out;
 }
 
 .methodology-item.inspiration h4 {
@@ -89,176 +91,246 @@
 }
 
 .methodology-item p {
-  margin: 0%;
+  margin: -1% 0;
   position: relative;
 }
 
-.methodology-item p:nth-child(odd) {
+.centerValue {
+  align-self: center;
+}
+
+.leftValue {
+  align-self: flex-start;
+}
+
+.rightValue {
+  align-self: flex-end;
+}
+
+/* ---------- Cápsulas amarillas ----------*/
+.methodology-item.inspiration p:nth-of-type(1){
+  padding: 1% 2.7rem;
+  animation-delay: 0.3s;
+  top: 20px;
+  left: 5%;
+}
+.methodology-item.inspiration p:nth-of-type(2){
+  padding: 1% 1.9rem;
+  animation-delay: 0s;
+  top: 35px;
+  left: 3%;
+}
+.methodology-item.inspiration p:nth-of-type(3){
+  padding: 1% 1.5rem;
+  animation-delay: 1.2s;
+  right: 1%
+}
+.methodology-item.inspiration p:nth-of-type(4){
+  padding: 1% 3.3rem;
+  animation-delay: 1.8s;
+  right: 18%;
+}
+.methodology-item.inspiration p:nth-of-type(5){
+  padding: 1% 2.8rem;
+  animation-delay: 1s;
+  right: 4%;
+}
+.methodology-item.inspiration p:nth-of-type(6){
+  padding: 1% 1.3rem;
+  animation-delay: 0.5s;
+  bottom: 20px;
+  left: 2%;
+}
+
+/* ---------- Cápsulas azules ----------*/
+.methodology-item.education p:nth-of-type(1){
+  padding: 1% 0.9rem;
+  animation-delay: 0.8s;
+  top: 10px;
+  left: 7%;
+}
+.methodology-item.education p:nth-of-type(2){
+  padding: 1% 2.1rem;
+  animation-delay: 0.8s;
+  top: 25px;
+  left: 2%;
+}
+.methodology-item.education p:nth-of-type(3){
+  padding: 1% 1.7rem;
+  animation-delay: 0.5s;
+  right: 2%;
+}
+.methodology-item.education p:nth-of-type(4){
+  padding: 1% 1.7rem;
+  animation-delay: 2s;
+  right: 4%;
+}
+.methodology-item.education p:nth-of-type(5){
+  padding: 1% 1.3rem;
+  animation-delay: 0.2s;
+  bottom: 15px;
+  left: 3%;
+}
+.methodology-item.education p:nth-of-type(6){
+  padding: 1% 0.9rem;
+  animation-delay: 1.2s;
+  bottom: 0px;
+  left: 10%;
+}
+
+/* ---------- Cápsulas rojas ----------*/
+.methodology-item.action p:nth-of-type(1){
+  padding: 1% 2.6rem;
+  animation-delay: 1.5s;
+  top: 5px;
+  right: 25%;
+}
+.methodology-item.action p:nth-of-type(2){
+  padding: 1% 0.8rem;
+  animation-delay: 1.7s;
+  bottom: 15px;
+  right: 2%;
+}
+.methodology-item.action p:nth-of-type(3){
+  padding: 1% 0.7rem;
+  animation-delay: 1.3;
+  left: 1%;
+}
+.methodology-item.action p:nth-of-type(4){
+  padding: 1% 2.1rem;
+  animation-delay: 0.5s;
+  left: 2%;
+}
+.methodology-item.action p:nth-of-type(5){
+  padding: 1% 2.5rem;
+  animation-delay: 1.7s;
+  right: 6%;
+  bottom: 20px;
+}
+.methodology-item.action p:nth-of-type(6){
+  padding: 1% 0.8rem;
+  animation-delay: 1.4s;
+  right: 20%;
+  bottom: 8px;
+}
+
+.methodology-item p:nth-of-type(odd) {
   animation: move 2s infinite alternate ease-in-out;
 }
 
-.methodology-item p:nth-child(even) {
+.methodology-item p:nth-of-type(even) {
   animation: move 2.5s infinite alternate ease-in-out;
 }
 
-/* ---------- CÁPSULAS IZQUIERDA ---------- */
-.methodology-item.inspiration p:nth-child(1) {
-  top: 10px;
-  left: 20px;
-  padding: 1% 2.1rem;
-  animation-delay: 1.2s;
-}
-.methodology-item.inspiration p:nth-child(2) {
-  top: 25px;
-  right: 80px;
-  padding: 1% 1.2rem;
-}
-.methodology-item.inspiration p:nth-child(3) {
-  top: -3px;
-  left: 80px;
-  padding: 1% 1.1rem;
-}
-.methodology-item.inspiration p:nth-child(5) {
-  right: 60px;
-  padding: 1% 3rem;
-}
-.methodology-item.inspiration p:nth-child(6) {
-  top: 5px;
-  left: 90px;
-  padding: 1% 2.5rem;
-}
-.methodology-item.inspiration p:nth-child(7) {
-  top: -10px;
-  right: 80px;
-  padding: 1% 1.5rem;
-  animation-delay: 1.3s;
+@media (min-width: 2000px) {
+  .methodology-item h4 {
+    font-size: 4rem;
+  }
+
+  .methodology-item p {
+    font-size: 3rem;
+  }
 }
 
-/* ---------- CÁPSULAS CENTRO ---------- */
-.methodology-item.education p:nth-child(1) {
-  top: 10px;
-  left: 15px;
-  padding: 1% 1.2rem;
-  animation-delay: 2.5s;
-}
-.methodology-item.education p:nth-child(2) {
-  top: 25px;
-  right: 75px;
-  padding: 1% 2rem;
-  animation-delay: 0.3s;
-}
-.methodology-item.education p:nth-child(3) {
-  top: -3px;
-  left: 90px;
-  padding: 1% 1.2rem;
-  animation-delay: 0.8s;
-}
-.methodology-item.education p:nth-child(5) {
-  left: 80px;
-  padding: 1% 1.8rem;
-}
-.methodology-item.education p:nth-child(6) {
-  top: -15px;
-  right: 90px;
-  padding: 1% 1.5rem;
-  animation-delay: 1.5s;
-}
-.methodology-item.education p:nth-child(7) {
-  top: -5px;
-  left: 60px;
-  padding: 1% 1.3rem;
-  animation-delay: 1.9s;
+@media (max-width: 1440px) {
+  .methodology-item p {
+    font-size: 1.5rem;
+  }
 }
 
-/* ---------- CÁPSULAS DERECHA ---------- */
-.methodology-item.action p:nth-child(1) {
-  top: 10px;
-  right: 100px;
-  padding: 1% 2.5rem;
-  animation-delay: 0.7s;
-}
-.methodology-item.action p:nth-child(2) {
-  top: -17px;
-  left: 80px;
-  padding: 1% 1.2rem;
-  animation-delay: 1.5s;
-}
-.methodology-item.action p:nth-child(3) {
-  top: -5px;
-  right: 10px;
-  padding: 1% 1.1rem;
-  animation-delay: 0s;
-}
-.methodology-item.action p:nth-child(5) {
-  right: 80px;
-  padding: 1% 2.2rem;
-  animation-delay: 1.3s;
-}
-.methodology-item.action p:nth-child(6) {
-  top: -15px;
-  left: 95px;
-  padding: 1% 2.4rem;
-  animation-delay: 1.0s;
-}
-.methodology-item.action p:nth-child(7) {
-  top: -20px;
-  right: 80px;
-  padding: 1% 5%;
-  animation-delay: 0.5s;
+@media (max-width: 1220px) {
+  .methodology-item p {
+    font-size: 1.3rem;
+  }
+
+  .methodology-item h4 {
+    font-size: 2.5rem;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(1){
+    top: 15px;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(2){
+    top: 30px;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(5){
+    top: 10px;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(6){
+    bottom: 10px;
+  }
+
+  .methodology-item.action p:nth-of-type(2){
+    bottom: 5px;
+  }
 }
 
-@media (max-width: 1065px) {
-  .methodology-item.inspiration p:nth-child(6) {
-    left: 73px;
+@media (max-width: 1130px) {
+  .methodology-item h4 {
+    font-size: 2.3rem;
+  }
+
+  .methodology-item p {
+    font-size: 1.1rem;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(1){
+    top: 5px;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(2){
+    top: 20px;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(4){
+    padding: 1% 2.5rem;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(5){
+    top: 5px;
+    padding: 1% 2.3rem;
+  }
+
+  .methodology-item.inspiration p:nth-of-type(6){
+    bottom: 10px;
+  }
+
+  .methodology-item.education p:nth-of-type(1){
+    top: 5px;
+  }
+
+  .methodology-item.education p:nth-of-type(2){
+    top: 15px;
+  }
+
+  .methodology-item.action p:nth-of-type(4){
     padding: 1% 1.8rem;
   }
-  .methodology-item.inspiration p:nth-child(7) {
-    top: -15px;
-    right: 80px;
-    padding: 1% 1.2rem;
-  }
-  .methodology-item.methodology-item.education p:nth-child(2) {
-    right: 70px;
-    padding: 1% 1.5rem;
-  }
-  .methodology-item.methodology-item.education p:nth-child(5) {
-    padding: 1% 1.3rem;
-  }
-  .methodology-item.methodology-item.education p:nth-child(6) {
-    right: 80px;
-    padding: 1% 1.2rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(1) {
-    right: 90px;
-    padding: 1% 1.8rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(2) {
-    left: 77px;
-    padding: 1% 0.9rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(5) {
-    right: 68px;
-    padding: 1% 1.6rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(6) {
-    top: -15px;
-    left: 90px;
-    padding: 1% 1.6rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(7) {
-    top: -15px;
-    right: 60px;
-    padding: 1% 0.7rem;
+  .methodology-item.action p:nth-of-type(5){
+    padding: 1% 2rem;
+    right: 5%;
+    bottom: 15px;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   .methodology-container {
     justify-content: space-around;
   }
 
   .methodology-item {
-    width: 45%;
+    width: 48%;
+  }
+
+  .methodology-item.action {
+    margin-top: 3%;
+  }
+
+  .methodology-item h4 {
+    font-size: 2rem;
   }
 }
 
@@ -266,50 +338,17 @@
   #methodology h3 {
     font-size: 7.5vw;
   }
-}
 
-@media (max-width: 740px) { /* Solo estilos de las cápsulas */
-  .methodology-item.inspiration p:nth-child(3) {
-    left: 70px;
-    padding: 1% 1rem;
-  }
-  .methodology-item.inspiration p:nth-child(6) {
-    left: 75px;
-  }
-  .methodology-item.inspiration p:nth-child(7) {
-    top: -15px;
-    right: 75px;
-    padding: 1% 1rem;
-  }
-  .methodology-item.methodology-item.education p:nth-child(3) {
-    left: 85px;
-    padding: 1% 1.1rem;
-  }
-  .methodology-item.methodology-item.education p:nth-child(6) {
-    top: -15px;
-    right: 75px;
-    padding: 1% 1rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(1) {
-    right: 85px;
-    padding: 1% 1.5rem;
-  }
-  .methodology-item.methodology-item.action p:nth-child(2) {
-    left: 73px;
-  }
-  .methodology-item.methodology-item.action p:nth-child(5) {
-    right: 73px;
+  .methodology-item.education p:nth-of-type(2){
     padding: 1% 1.9rem;
   }
-  .methodology-item.methodology-item.action p:nth-child(6) {
-    top: -20px;
-    left: 85px;
-    padding: 1% 1.7rem;
+
+  .methodology-item.education p:nth-of-type(4){
+    padding: 1% 1.5rem;
   }
-  .methodology-item.methodology-item.action p:nth-child(7) {
-    top: -10px;
-    right: 50px;
-    padding: 1% 1rem;
+
+  .methodology-item.education p:nth-of-type(5){
+    bottom: 10px;
   }
 }
 
@@ -324,7 +363,19 @@
   }
 
   .methodology-item.education, .methodology-item.action {
-    margin-top: 3%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 380px) {
+  .methodology-item {
+    width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .methodology-item {
+    width: 100%;
   }
 }
 
@@ -351,6 +402,6 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-3px);
+    transform: translateY(3px);
   }
 }

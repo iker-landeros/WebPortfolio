@@ -12,33 +12,33 @@ const Methodology = () => {
             <div className="methodology-container">
 
                 <div className="methodology-item inspiration">
-                    <p>Sueños</p>
-                    <p>Comienzo</p>
-                    <p>Confianza</p>
+                    <p className="centerValue">Sueños</p>
+                    <p className="leftValue">Comienzo</p>
+                    <p className="rightValue">Confianza</p>
                     <h4>Inspiración</h4>
-                    <p>Amor</p>
-                    <p>Pasión</p>
-                    <p>Aspiración</p>
+                    <p className="centerValue">Amor</p>
+                    <p className="rightValue">Pasión</p>
+                    <p className="leftValue">Aspiración</p>
                 </div>
 
                 <div className="methodology-item education">
-                    <p>Crecimiento</p>
-                    <p>Libertad</p>
-                    <p>Aprender</p>
+                    <p className="centerValue">Crecimiento</p>
+                    <p className="leftValue">Libertad</p>
+                    <p className="rightValue">Aprender</p>
                     <h4>Educación</h4>
-                    <p>Apertura</p>
-                    <p>Innovación</p>
-                    <p>Compromiso</p>
+                    <p className="rightValue">Apertura</p>
+                    <p className="leftValue">Innovación</p>
+                    <p className="centerValue">Compromiso</p>
                 </div>
                 
                 <div className="methodology-item action">
-                    <p>Empatía</p>
-                    <p>Generosidad</p>
-                    <p>Perseverancia</p>
+                    <p className="centerValue">Empatía</p>
+                    <p className="rightValue">Generosidad</p>
+                    <p className="leftValue">Perseverancia</p>
                     <h4>Acción</h4>
-                    <p>Gratitud</p>
-                    <p>Impacto</p>
-                    <p>Colaboración</p>
+                    <p className="leftValue">Gratitud</p>
+                    <p className="rightValue">Impacto</p>
+                    <p className="centerValue">Colaboración</p>
                 </div>
 
             </div>
