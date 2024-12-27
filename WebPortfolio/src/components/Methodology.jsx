@@ -17,8 +17,8 @@ const Methodology = () => {
                     <p>Confianza</p>
                     <h4>Inspiración</h4>
                     <p>Amor</p>
-                    <p>Aspiración</p>
                     <p>Pasión</p>
+                    <p>Aspiración</p>
                 </div>
 
                 <div className="methodology-item education">

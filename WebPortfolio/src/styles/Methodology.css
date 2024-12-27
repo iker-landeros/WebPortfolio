@@ -39,7 +39,7 @@
   align-items: center;
 }
 
-.methodology-item h4, .methodology-container p {
+.methodology-item h4, .methodology-item p {
   color: #fff;
   background-color: #3b3d3c;
   padding: 1% 4%;
@@ -47,6 +47,7 @@
   font-weight: bold;
   font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .methodology-item h4 {
@@ -72,18 +73,183 @@
 .methodology-item h4{
   font-size: 3rem;
   margin: 3%;
+  animation: moveTitles 5s infinite alternate ease-in-out;
+}
+
+.methodology-item.inspiration h4 {
+  animation-delay: 1.2s;
+}
+
+.methodology-item.education h4 {
+  animation-delay: 2.5s;
+}
+
+.methodology-item.action h4 {
+  animation-delay: 3.7s;
 }
 
 .methodology-item p {
-  margin: 2%;
+  margin: 0%;
+  position: relative;
 }
 
 .methodology-item p:nth-child(odd) {
-  animation: move 4s infinite alternate ease-in-out;
+  animation: move 2s infinite alternate ease-in-out;
 }
 
 .methodology-item p:nth-child(even) {
-  animation: move 3s infinite alternate ease-in-out;
+  animation: move 2.5s infinite alternate ease-in-out;
+}
+
+/* ---------- CÁPSULAS IZQUIERDA ---------- */
+.methodology-item.inspiration p:nth-child(1) {
+  top: 10px;
+  left: 20px;
+  padding: 1% 2.1rem;
+  animation-delay: 1.2s;
+}
+.methodology-item.inspiration p:nth-child(2) {
+  top: 25px;
+  right: 80px;
+  padding: 1% 1.2rem;
+}
+.methodology-item.inspiration p:nth-child(3) {
+  top: -3px;
+  left: 80px;
+  padding: 1% 1.1rem;
+}
+.methodology-item.inspiration p:nth-child(5) {
+  right: 60px;
+  padding: 1% 3rem;
+}
+.methodology-item.inspiration p:nth-child(6) {
+  top: 5px;
+  left: 90px;
+  padding: 1% 2.5rem;
+}
+.methodology-item.inspiration p:nth-child(7) {
+  top: -10px;
+  right: 80px;
+  padding: 1% 1.5rem;
+  animation-delay: 1.3s;
+}
+
+/* ---------- CÁPSULAS CENTRO ---------- */
+.methodology-item.education p:nth-child(1) {
+  top: 10px;
+  left: 15px;
+  padding: 1% 1.2rem;
+  animation-delay: 2.5s;
+}
+.methodology-item.education p:nth-child(2) {
+  top: 25px;
+  right: 75px;
+  padding: 1% 2rem;
+  animation-delay: 0.3s;
+}
+.methodology-item.education p:nth-child(3) {
+  top: -3px;
+  left: 90px;
+  padding: 1% 1.2rem;
+  animation-delay: 0.8s;
+}
+.methodology-item.education p:nth-child(5) {
+  left: 80px;
+  padding: 1% 1.8rem;
+}
+.methodology-item.education p:nth-child(6) {
+  top: -15px;
+  right: 90px;
+  padding: 1% 1.5rem;
+  animation-delay: 1.5s;
+}
+.methodology-item.education p:nth-child(7) {
+  top: -5px;
+  left: 60px;
+  padding: 1% 1.3rem;
+  animation-delay: 1.9s;
+}
+
+/* ---------- CÁPSULAS DERECHA ---------- */
+.methodology-item.action p:nth-child(1) {
+  top: 10px;
+  right: 100px;
+  padding: 1% 2.5rem;
+  animation-delay: 0.7s;
+}
+.methodology-item.action p:nth-child(2) {
+  top: -17px;
+  left: 80px;
+  padding: 1% 1.2rem;
+  animation-delay: 1.5s;
+}
+.methodology-item.action p:nth-child(3) {
+  top: -5px;
+  right: 10px;
+  padding: 1% 1.1rem;
+  animation-delay: 0s;
+}
+.methodology-item.action p:nth-child(5) {
+  right: 80px;
+  padding: 1% 2.2rem;
+  animation-delay: 1.3s;
+}
+.methodology-item.action p:nth-child(6) {
+  top: -15px;
+  left: 95px;
+  padding: 1% 2.4rem;
+  animation-delay: 1.0s;
+}
+.methodology-item.action p:nth-child(7) {
+  top: -20px;
+  right: 80px;
+  padding: 1% 5%;
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 1065px) {
+  .methodology-item.inspiration p:nth-child(6) {
+    left: 73px;
+    padding: 1% 1.8rem;
+  }
+  .methodology-item.inspiration p:nth-child(7) {
+    top: -15px;
+    right: 80px;
+    padding: 1% 1.2rem;
+  }
+  .methodology-item.methodology-item.education p:nth-child(2) {
+    right: 70px;
+    padding: 1% 1.5rem;
+  }
+  .methodology-item.methodology-item.education p:nth-child(5) {
+    padding: 1% 1.3rem;
+  }
+  .methodology-item.methodology-item.education p:nth-child(6) {
+    right: 80px;
+    padding: 1% 1.2rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(1) {
+    right: 90px;
+    padding: 1% 1.8rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(2) {
+    left: 77px;
+    padding: 1% 0.9rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(5) {
+    right: 68px;
+    padding: 1% 1.6rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(6) {
+    top: -15px;
+    left: 90px;
+    padding: 1% 1.6rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(7) {
+    top: -15px;
+    right: 60px;
+    padding: 1% 0.7rem;
+  }
 }
 
 @media (max-width: 960px) {
@@ -102,6 +268,51 @@
   }
 }
 
+@media (max-width: 740px) { /* Solo estilos de las cápsulas */
+  .methodology-item.inspiration p:nth-child(3) {
+    left: 70px;
+    padding: 1% 1rem;
+  }
+  .methodology-item.inspiration p:nth-child(6) {
+    left: 75px;
+  }
+  .methodology-item.inspiration p:nth-child(7) {
+    top: -15px;
+    right: 75px;
+    padding: 1% 1rem;
+  }
+  .methodology-item.methodology-item.education p:nth-child(3) {
+    left: 85px;
+    padding: 1% 1.1rem;
+  }
+  .methodology-item.methodology-item.education p:nth-child(6) {
+    top: -15px;
+    right: 75px;
+    padding: 1% 1rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(1) {
+    right: 85px;
+    padding: 1% 1.5rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(2) {
+    left: 73px;
+  }
+  .methodology-item.methodology-item.action p:nth-child(5) {
+    right: 73px;
+    padding: 1% 1.9rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(6) {
+    top: -20px;
+    left: 85px;
+    padding: 1% 1.7rem;
+  }
+  .methodology-item.methodology-item.action p:nth-child(7) {
+    top: -10px;
+    right: 50px;
+    padding: 1% 1rem;
+  }
+}
+
 @media (max-width: 640px) {
   .methodology-container {
     flex-direction: column;
@@ -112,6 +323,9 @@
     width: 80%;
   }
 
+  .methodology-item.education, .methodology-item.action {
+    margin-top: 3%;
+  }
 }
 
 @keyframes animatedBackground {
@@ -129,5 +343,14 @@
   }
   100% {
     transform: translateY(3px);
+  }
+}
+
+@keyframes moveTitles {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3px);
   }
 }
