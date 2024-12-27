@@ -7,38 +7,38 @@ const Methodology = () => {
 
     return (
         <section id="methodology">
-            <h3>Mi metodología de impacto</h3>
+            <h3>{t('methodologyTitle')}</h3>
 
             <div className="methodology-container">
 
                 <div className="methodology-item inspiration">
-                    <p className="centerValue">Sueños</p>
-                    <p className="leftValue">Comienzo</p>
-                    <p className="rightValue">Confianza</p>
-                    <h4>Inspiración</h4>
-                    <p className="centerValue">Amor</p>
-                    <p className="rightValue">Pasión</p>
-                    <p className="leftValue">Aspiración</p>
+                    <p className="centerValue">{t('valueDreams')}</p>
+                    <p className="leftValue">{t('valueStart')}</p>
+                    <p className="rightValue">{t('valueTrust')}</p>
+                    <h4>{t('valueInspiration')}</h4>
+                    <p className="centerValue">{t('valueLove')}</p>
+                    <p className="rightValue">{t('valuePassion')}</p>
+                    <p className="leftValue">{t('valueAspiration')}</p>
                 </div>
 
                 <div className="methodology-item education">
-                    <p className="centerValue">Crecimiento</p>
-                    <p className="leftValue">Libertad</p>
-                    <p className="rightValue">Aprender</p>
-                    <h4>Educación</h4>
-                    <p className="rightValue">Apertura</p>
-                    <p className="leftValue">Innovación</p>
-                    <p className="centerValue">Compromiso</p>
+                    <p className="centerValue">{t('valueGrowth')}</p>
+                    <p className="leftValue">{t('valueFreedom')}</p>
+                    <p className="rightValue">{t('valueLearn')}</p>
+                    <h4>{t('valueEducation')}</h4>
+                    <p className="rightValue">{t('valueOpenness')}</p>
+                    <p className="leftValue">{t('valueInnovation')}</p>
+                    <p className="centerValue">{t('valueCommitment')}</p>
                 </div>
                 
                 <div className="methodology-item action">
-                    <p className="centerValue">Empatía</p>
-                    <p className="rightValue">Generosidad</p>
-                    <p className="leftValue">Perseverancia</p>
-                    <h4>Acción</h4>
-                    <p className="leftValue">Gratitud</p>
-                    <p className="rightValue">Impacto</p>
-                    <p className="centerValue">Colaboración</p>
+                    <p className="centerValue">{t('valueEmpathy')}</p>
+                    <p className="rightValue">{t('valueGenerosity')}</p>
+                    <p className="leftValue">{t('valuePerseverance')}</p>
+                    <h4>{t('valueAction')}</h4>
+                    <p className="leftValue">{t('valueGratitude')}</p>
+                    <p className="rightValue">{t('valueImpact')}</p>
+                    <p className="centerValue">{t('valueCollaboration')}</p>
                 </div>
 
             </div>
