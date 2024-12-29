@@ -4,47 +4,38 @@ import '../styles/LogoSlider.css';
 
 const LogoSlider = () => {
     const { t } = useTranslation();
+    const logos = [
+        "src/assets/logos/9logoSEJUVE.svg",
+        "src/assets/logos/1logoTec.svg",
+        "src/assets/logos/2logoSamsung.svg",
+        "src/assets/logos/3logoUNICEF.svg",
+        "src/assets/logos/4logoNatura.svg",
+        "src/assets/logos/5logoAFS.svg",
+        "src/assets/logos/6logoUPAEP.svg",
+        "src/assets/logos/7logoLiks.svg",
+        "src/assets/logos/8logoINCmty.svg",
+        "src/assets/logos/10logoHeraldo.svg",
+        "src/assets/logos/11logoBP.svg",
+        "src/assets/logos/12logoDisruptivoTV.svg",
+        "src/assets/logos/13logoSocialab.svg",
+    ];
 
     return (
         <section id="logoSlider">
-        <h3>Han confiado en m&iacute;:</h3>
-
-        <div class="sliderFade">
-            <div class="logoSlide">
-                <img src="src/assets/logos/9logoSEJUVE.svg" alt="Logo de la Secretaría de la Juventud en Querétaro" />
-                <img src="src/assets/logos/1logoTec.svg" alt="Logo del Tecnológico de Monterrey" />
-                <img src="src/assets/logos/2logoSamsung.svg" alt="Logo de Samsung" />
-                <img src="src/assets/logos/3logoUNICEF.svg" alt="Logo de UNICEF" />
-                <img src="src/assets/logos/4logoNatura.svg" alt="Logo de Natura" />
-                <img src="src/assets/logos/5logoAFS.svg" alt="Logo de AFS" />
-                <img src="src/assets/logos/6logoUPAEP.svg" alt="Logo de UPAEP" />
-                <img src="src/assets/logos/7logoLiks.svg" alt="Logo de Liks" />
-                <img src="src/assets/logos/8logoINCmty.svg" alt="Logo de INCmty" />
-                <img src="src/assets/logos/10logoHeraldo.svg" alt="Logo del Heraldo de México" />
-                <img src="src/assets/logos/11logoBP.svg" alt="Logo de British Petroleum" />
-                <img src="src/assets/logos/12logoDisruptivoTV.svg" alt="Logo de Disruptivo TV" />
-                <img src="src/assets/logos/13logoSocialab.svg" alt="Logo de Socialab" />
+            <h3>Han confiado en mí:</h3>
+            <div className="sliderFade">
+                <div className="logoSlide">
+                    {logos.concat(logos).map((logo, index) => (
+                        <img
+                            key={index}
+                            src={logo}
+                            alt={`Logo ${index + 1}`}
+                        />
+                    ))}
+                </div>
             </div>
-
-            <div class="logoSlide">
-                <img src="src/assets/logos/9logoSEJUVE.svg" alt="Logo de la Secretaría de la Juventud en Querétaro" />
-                <img src="src/assets/logos/1logoTec.svg" alt="Logo del Tecnológico de Monterrey" />
-                <img src="src/assets/logos/2logoSamsung.svg" alt="Logo de Samsung" />
-                <img src="src/assets/logos/3logoUNICEF.svg" alt="Logo de UNICEF" />
-                <img src="src/assets/logos/4logoNatura.svg" alt="Logo de Natura" />
-                <img src="src/assets/logos/5logoAFS.svg" alt="Logo de AFS" />
-                <img src="src/assets/logos/6logoUPAEP.svg" alt="Logo de UPAEP" />
-                <img src="src/assets/logos/7logoLiks.svg" alt="Logo de Liks" />
-                <img src="src/assets/logos/8logoINCmty.svg" alt="Logo de INCmty" />
-                <img src="src/assets/logos/10logoHeraldo.svg" alt="Logo del Heraldo de México" />
-                <img src="src/assets/logos/11logoBP.svg" alt="Logo de British Petroleum" />
-                <img src="src/assets/logos/12logoDisruptivoTV.svg" alt="Logo de Disruptivo TV" />
-                <img src="src/assets/logos/13logoSocialab.svg" alt="Logo de Socialab" />
-            </div>
-
-        </div>
-    </section>
+        </section>
     );
-}
+};
 
 export default LogoSlider;
