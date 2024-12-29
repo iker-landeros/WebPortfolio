@@ -58,6 +58,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 educationalContent: "Minutos de contenido educativo creado",
                 annualImpacts: "Impactos anuales en redes sociales",
                 impactProjects: "Emprendimientos y proyectos de impacto creados",
+                logoSliderTitle: "Han confiado en mí:",
             },
         },
         en: {
@@ -111,6 +112,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 educationalContent: "Minutes of educational content created",
                 annualImpacts: "Annual impacts on social media",
                 impactProjects: "Impactful ventures and projects created",
+
+                // LogoSlider
+                logoSliderTitle: "I've been trusted by:",
             },
         },
     },

@@ -22,15 +22,13 @@
     font-weight: bold;
     margin: 0 0 2%;
     color: #3b3d3c;
+    margin-bottom: 5%;
 }
 
 .logoSlide {
     box-sizing: border-box;
-    display: flex;
-    padding: 15px 0px;
-    gap: 5rem;
-    animation: 50s slideBigDisplay infinite linear;
-    width: calc(2*100%);
+    display: inline-flex;
+    animation: 60s slide linear infinite;
 }
 
 .sliderFade::before,
@@ -56,8 +54,10 @@
 }
 
 .logoSlide img {
+    box-sizing: border-box;
     height: 4vw;
     filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(189deg) brightness(100%) contrast(55%);
+    padding: 0 2vw;
 }
 
 @media (max-width: 1000px) {
@@ -71,33 +71,15 @@
         font-size: 7.5vw;
     }
 
-    .logoSlide {
-        gap: 2rem;
-        animation: 40s slideSmallDisplay infinite linear;
-    }
-
-    .logoSlide img {
-        height: 7vw;
-    }
 }
 
-@keyframes slideBigDisplay {
+@keyframes slide {
     from {
         transform: translateX(0%);
     }
 
     to {
-        transform: translateX(-132%); /* 100% + 50% ESTO ES LO QUE DEBO CAMBIAR SI AÑADO MÁS LOGOS*/
-    }
-}
-
-@keyframes slideSmallDisplay {
-    from {
-        transform: translateX(0%);
-    }
-
-    to {
-        transform: translateX(-211%);
+        transform: translateX(-50%);
     }
 }
 

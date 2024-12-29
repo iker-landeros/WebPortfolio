@@ -5,7 +5,6 @@ import '../styles/LogoSlider.css';
 const LogoSlider = () => {
     const { t } = useTranslation();
     const logos = [
-        "src/assets/logos/9logoSEJUVE.svg",
         "src/assets/logos/1logoTec.svg",
         "src/assets/logos/2logoSamsung.svg",
         "src/assets/logos/3logoUNICEF.svg",
@@ -14,6 +13,7 @@ const LogoSlider = () => {
         "src/assets/logos/6logoUPAEP.svg",
         "src/assets/logos/7logoLiks.svg",
         "src/assets/logos/8logoINCmty.svg",
+        "src/assets/logos/9logoSEJUVE.svg",
         "src/assets/logos/10logoHeraldo.svg",
         "src/assets/logos/11logoBP.svg",
         "src/assets/logos/12logoDisruptivoTV.svg",
@@ -22,7 +22,7 @@ const LogoSlider = () => {
 
     return (
         <section id="logoSlider">
-            <h3>Han confiado en mí:</h3>
+            <h3>{t('logoSliderTitle')}</h3>
             <div className="sliderFade">
                 <div className="logoSlide">
                     {logos.concat(logos).map((logo, index) => (
