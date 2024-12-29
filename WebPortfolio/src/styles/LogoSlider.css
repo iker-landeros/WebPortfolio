@@ -53,7 +53,7 @@
 
 .logoSlide img {
     height: 4vw;
-    margin: 0px 1.5%;
+    margin: 0px 1%;
     filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(189deg) brightness(100%) contrast(55%);
 }
 
