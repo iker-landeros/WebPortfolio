@@ -4,17 +4,6 @@ import '../styles/Experiences.css';
 
 const Experiences = () => {
     const { t } = useTranslation();
-    // const experiencesPhotos = [
-    //     "src/assets/img/6-exp1.jpg",
-    //     "src/assets/img/6-exp2.jpg",
-    //     "src/assets/img/6-exp3.jpg",
-    //     "src/assets/img/6-exp4.jpg",
-    //     "src/assets/img/6-exp5.jpg",
-    //     "src/assets/img/6-exp6.jpg",
-    //     "src/assets/img/6-exp7.jpg",
-    //     "src/assets/img/6-exp8.jpg",
-    //     "src/assets/img/6-exp9.jpg",
-    // ];
 
     const experiencesPhotos = {
         expCard1: {
@@ -59,12 +48,12 @@ const Experiences = () => {
         <section id="experiences">
             <h3>Experiencias que me han inspirado</h3>
 
-            <div class="experiencesCards">
+            <div className="experiencesCards">
                 {Object.keys(experiencesPhotos).map((key, index) => (
-                    <div class={key}>
-                        <img src={experiencesPhotos[key].photo} alt={`Experiencia ${index + 1}`} />
+                    <div className={"expCardContainer " + key}>
+                        <img src={experiencesPhotos[key].photo} alt={`Experiencia ${index + 1}: ${[key].text}`} />
                         
-                        <div class="expText">
+                        <div className="expText">
                             {experiencesPhotos[key].text}
                         </div>
                     </div>
@@ -80,21 +69,6 @@ const Experiences = () => {
                 <div class="expCard9">Beca a Nueva York por programa de agentes de cambio</div> */}
             </div>
         </section>
-
-        // <section id="logoSlider">
-        //     <h3>{t('logoSliderTitle')}</h3>
-        //     <div className="sliderFade">
-        //         <div className="logoSlide">
-        //             {logos.concat(logos).map((logo, index) => (
-        //                 <img
-        //                     key={index}
-        //                     src={logo}
-        //                     alt={`Logo ${index + 1}`}
-        //                 />
-        //             ))}
-        //         </div>
-        //     </div>
-        // </section>
     );
 };
 
