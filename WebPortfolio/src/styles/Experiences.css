@@ -21,13 +21,58 @@
 }
 
 .experiencesCards {
-    max-width: 30%;
-    display: flex;
-    flex-direction: row;
-    gap: 20%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    justify-items: center;
     align-items: center;
 }
 
-.expCardContainer img{
+.expCardContainer {
+    position: relative;
     width: 100%;
+    padding-bottom: 60%; /* 16:9 */
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expCardContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 80%, rgba(0,212,255,0) 100%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .experiencesCards {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .experiencesCards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
 }

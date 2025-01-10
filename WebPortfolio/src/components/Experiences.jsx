@@ -41,6 +41,18 @@ const Experiences = () => {
         expCard9: {
             photo: "src/assets/img/6-exp9.jpg",
             text: "Beca a Nueva York por programa de agentes de cambio"
+        },
+        expCard10: {
+            photo: "src/assets/img/6-exp10.jpg",
+            text: "Ganador en hackatón en la Universidad de Pennsylvania"
+        },
+        expCard11: {
+            photo: "src/assets/img/6-exp11.jpg",
+            text: "Creación del podcast de impacto social #De5en5"
+        },
+        expCard12: {
+            photo: "src/assets/img/6-exp12.jpg",
+            text: "Beca a Nueva York por programa de agentes de cambio"
         }
     }
 
