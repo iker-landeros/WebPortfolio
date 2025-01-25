@@ -6,7 +6,6 @@
     padding: 4% 5%;
     overflow: hidden;
     background-color: #000000;
-    white-space: nowrap;
 
     /* Background */
 }
@@ -24,8 +23,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3%;
-    justify-items: center;
-    align-items: center;
 }
 
 .expCardContainer {
@@ -49,19 +46,26 @@
 }
 
 .expText {
+    box-sizing: border-box;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
     color: #ffffff;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     padding: 0 10px;
     background-color: rgba(0, 0, 0, 0.6);
     background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 80%, rgba(0,212,255,0) 100%);
     border-radius: 5px;
     padding: 10px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.expCardContainer:hover .expText {
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 

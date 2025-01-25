@@ -70,15 +70,6 @@ const Experiences = () => {
                         </div>
                     </div>
                 ))}
-                {/* <div class="expCard1">Presentador en festival de emprendimiento INCmty</div>
-                <div class="expCard2">Coordinador del Agendatón de la SEJUVE Querétaro</div>
-                <div class="expCard3">Delegado internacional en “AFS Youth Assembly”</div>
-                <div class="expCard4">Ganador nacional Youth Challenge de UNICEF México</div>
-                <div class="expCard5">Conferencista en congreso de Innovación Social de la UPAEP</div>
-                <div class="expCard6">Coordinador nacional de voluntarios en INCmty</div>
-                <div class="expCard7">Ganador en hackatón en la Universidad de Pennsylvania</div>
-                <div class="expCard8">Creación del podcast de impacto social #De5en5</div>
-                <div class="expCard9">Beca a Nueva York por programa de agentes de cambio</div> */}
             </div>
         </section>
     );
