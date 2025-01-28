@@ -12,7 +12,7 @@ const Experiences = () => {
         },
         expCard2: {
             photo: "src/assets/img/6-exp2.jpg",
-            text: "Coordinador del Agendatón de la SEJUVE Querétaro"
+            text: "Coordinador de campamentos para Secretaría de la Juventud de Querétaro"
         },
         expCard3: {
             photo: "src/assets/img/6-exp3.jpg",
@@ -20,27 +20,27 @@ const Experiences = () => {
         },
         expCard4: {
             photo: "src/assets/img/6-exp4.jpg",
-            text: "Ganador nacional Youth Challenge de UNICEF México"
+            text: ""
         },
         expCard5: {
             photo: "src/assets/img/6-exp5.jpg",
-            text: "Conferencista en congreso de Innovación Social de la UPAEP"
+            text: "Ganador nacional Youth Challenge de UNICEF México"
         },
         expCard6: {
             photo: "src/assets/img/6-exp6.jpg",
-            text: "Coordinador nacional de voluntarios en INCmty"
+            text: "Conferencista en congreso de Innovación Social de la UPAEP"
         },
         expCard7: {
             photo: "src/assets/img/6-exp7.jpg",
-            text: "Ganador en hackatón en la Universidad de Pennsylvania"
+            text: "Coordinador nacional de voluntarios en INCmty"
         },
         expCard8: {
             photo: "src/assets/img/6-exp8.jpg",
-            text: "Creación del podcast de impacto social #De5en5"
+            text: ""
         },
         expCard9: {
             photo: "src/assets/img/6-exp9.jpg",
-            text: "Beca a Nueva York por programa de agentes de cambio"
+            text: ""
         },
         expCard10: {
             photo: "src/assets/img/6-exp10.jpg",
@@ -52,7 +52,7 @@ const Experiences = () => {
         },
         expCard12: {
             photo: "src/assets/img/6-exp12.jpg",
-            text: "Beca a Nueva York por programa de agentes de cambio"
+            text: ""
         }
     }
 
