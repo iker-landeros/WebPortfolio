@@ -20,7 +20,7 @@ const Experiences = () => {
         },
         expCard4: {
             photo: "src/assets/img/6-exp4.jpg",
-            text: ""
+            text: "Responsable del encuentro del voluntariado del CRIT Puebla"
         },
         expCard5: {
             photo: "src/assets/img/6-exp5.jpg",
@@ -35,12 +35,12 @@ const Experiences = () => {
             text: "Coordinador nacional de voluntarios en INCmty"
         },
         expCard8: {
-            photo: "src/assets/img/6-exp8.jpg",
-            text: ""
+            photo: "src/assets/img/6-exp8.jpg", // ESTE NECESITA FOTO
+            text: "Organizador del curso de verano “Raíces”"
         },
         expCard9: {
-            photo: "src/assets/img/6-exp9.jpg",
-            text: ""
+            photo: "src/assets/img/6-exp9.jpg", // ESTE NECESITA FOTO
+            text: "Organizador de la capacitación integral para Embajadores SEJUVE Querétaro"
         },
         expCard10: {
             photo: "src/assets/img/6-exp10.jpg",
@@ -51,8 +51,8 @@ const Experiences = () => {
             text: "Creación del podcast de impacto social #De5en5"
         },
         expCard12: {
-            photo: "src/assets/img/6-exp12.jpg",
-            text: ""
+            photo: "src/assets/img/6-exp12.jpg", // ESTE NECESITA FOTO
+            text: "Líder del proyecto de impacto para el Día Nacional de Embajadores"
         }
     }
 
