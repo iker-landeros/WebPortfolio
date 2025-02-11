@@ -92,3 +92,20 @@
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
     }
 }
+
+
+/* Better Images Format */
+
+.expCard1 img {
+    object-position: 50% 60%;
+    scale: 1.5;
+}
+
+.expCard2 img {
+    object-position: 50% 100%;
+}
+
+.expCard3 img {
+    object-position: 50% 40%;
+    scale: 1.1;
+}
