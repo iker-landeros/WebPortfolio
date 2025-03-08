@@ -4,6 +4,7 @@ import Methodology from '../components/Methodology';
 import Impact from '../components/Impact';
 import LogoSlider from '../components/LogoSlider';
 import Experiences from '../components/Experiences';
+import Testimonies from '../components/Testimonies';
 
 const FounderPortfolio = () => {
     return (
@@ -14,6 +15,7 @@ const FounderPortfolio = () => {
             <Impact />
             <LogoSlider />
             <Experiences />
+            <Testimonies />
         </>
     );
 }
