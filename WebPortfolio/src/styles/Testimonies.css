@@ -35,9 +35,12 @@
     margin: 0 1.5%;
     max-width: 30%;
     padding: 1% 2%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     white-space: normal;
     text-align: justify;
+    justify-content: space-between;
+    align-items: flex-end;
 
     background-color: rgba(255, 255, 255, 0.8);
     
@@ -52,7 +55,13 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: #3b3d3c;
-    text-align: right;
+    color: #fff;
+    background: #3b3d3c;
+    padding: 1% 4%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
 }
 
 .sliderFade::before,

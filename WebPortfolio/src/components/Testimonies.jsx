@@ -7,10 +7,12 @@ const Testimonies = () => {
     const testimonies = [
         {
             name: "Rafael Laja",
+            relationship: "Estudiante",
             testimony: "Iker Landeros es un líder increíble. Su energía y creatividad me inspiraron a crear proyectos de arte con gran impacto, gracias a él me convertí en un gran Embajador Juvenil. #INSPIRE"
         },
         {
             name: "Fernanda Román",
+            relationship: "Colaboradora",
             testimony: "Colaborar con Iker fue muy gratificante, debido a su liderazgo y habilidad de trabajo en equipo."
         }
     ]
@@ -25,6 +27,7 @@ const Testimonies = () => {
                         <div key={index} className="testimony">
                             <p>{testimony.testimony}</p>
                             <p className="testimonyName">{testimony.name}</p>
+                            <p className="testimonyRelationship">{testimony.relationship}</p>
                         </div>
                     ))}
                 </div>
