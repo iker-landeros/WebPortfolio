@@ -1,6 +1,6 @@
-/*LOGO SLIDER*/
+/*TESTIMONY SLIDER*/
 
-#logoSlider {
+#testimonySlider {
     box-sizing: border-box;
     position: relative;
     padding: 4% 5%;
@@ -15,7 +15,7 @@
     animation: animatedBackground 70s linear infinite;
 }
 
-#logoSlider h3 {
+#testimonySlider h3 {
     font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
     font-size: 4rem;
     font-weight: bold;
@@ -24,7 +24,7 @@
     margin-bottom: 5%;
 }
 
-.logoSlide {
+.testimonySlide {
     box-sizing: border-box;
     display: inline-flex;
     animation: 60s slide linear infinite;
@@ -52,21 +52,9 @@
     background: linear-gradient(90deg, rgba(233, 233, 233, 0) 0%, rgb(255, 255, 255) 100%);
 }
 
-.logoSlide img {
-    box-sizing: border-box;
-    height: 4vw;
-    filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(189deg) brightness(100%) contrast(55%);
-    padding: 0 2vw;
-}
-
-@media (max-width: 1000px) {
-    .logoSlide img {
-        height: 6vw;
-    }
-}
 
 @media (max-width: 768px) {
-    #logoSlider h3 {
+    #testimonySlider h3 {
         font-size: 7.5vw;
     }
 

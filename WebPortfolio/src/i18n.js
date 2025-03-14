@@ -59,6 +59,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 annualImpacts: "Impactos anuales en redes sociales",
                 impactProjects: "Emprendimientos y proyectos de impacto creados",
                 logoSliderTitle: "Han confiado en mí:",
+
+                // Testimonies
+                testimonySlider: "Esto dicen de mí:",
+
             },
         },
         en: {
@@ -114,7 +118,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 impactProjects: "Impactful ventures and projects created",
 
                 // LogoSlider
-                logoSliderTitle: "I've been trusted by:",
+                logoSliderTitle: "Impact partners:",
+
+                // Testimonies
+                testimonySlider: "Testimonies:",
             },
         },
     },
