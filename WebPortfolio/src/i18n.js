@@ -62,7 +62,44 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
                 // Testimonies
                 testimonySlider: "Esto dicen de mí:",
-
+                // Testimonies object
+                testimonies: [
+                    {
+                        name: "Rafael Laja",
+                        relationship: "Estudiante",
+                        testimony: "Iker Landeros es un líder increíble. Su energía y creatividad me inspiraron a crear proyectos de arte con gran impacto, gracias a él me convertí en un gran Embajador Juvenil. #INSPIRE"
+                    },
+                    {
+                        name: "Fernanda Román",
+                        relationship: "Collaboradora",
+                        testimony: "Colaborar con Iker fue muy gratificante, debido a su liderazgo y habilidad de trabajo en equipo."
+                    },
+                    {
+                        name: "José Pablo Ramos",
+                        relationship: "Estudiante",
+                        testimony: "Iker es un gran líder y un gran emprendedor. Me apoyó durante muchos años a desarrollar mi mejor versión y confiar en que todos podemos ser agentes de cambio."
+                    },
+                    {
+                        name: "",
+                        relationship: "",
+                        testimony: ""
+                    },
+                    {
+                        name: "",
+                        relationship: "",
+                        testimony: ""
+                    },
+                    {
+                        name: "",
+                        relationship: "",
+                        testimony: ""
+                    },
+                    {
+                        name: "",
+                        relationship: "",
+                        testimony: ""
+                    },
+                ],
             },
         },
         en: {
@@ -122,6 +159,19 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
                 // Testimonies
                 testimonySlider: "Testimonies:",
+                // Testimonies object
+                testimonies: [
+                    {
+                        name: "Rafael Laja",
+                        relationship: "Student",
+                        testimony: "Iker Landeros is an incredible leader. His energy and creativity inspired me to create art projects with great impact, thanks to him I became a great Youth Ambassador. #INSPIRE"
+                    },
+                    {
+                        name: "Fernanda Román",
+                        relationship: "Collaborator",
+                        testimony: "Collaborating with Iker was very rewarding, due to his leadership and teamwork skills."
+                    }
+                ],
             },
         },
     },

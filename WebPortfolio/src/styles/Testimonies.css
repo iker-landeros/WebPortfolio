@@ -27,20 +27,23 @@
 .testimonyContainer {
     box-sizing: border-box;
     display: inline-flex;
+    
     /* animation: 60s slide linear infinite; */
 }
 
 .testimony {
     box-sizing: border-box;
-    margin: 0 1.5%;
+    margin: 0 0.5%;
     max-width: 30%;
-    padding: 1% 2%;
+    min-width: 325px;
+    padding: 1% 1.5%;
     display: flex;
     flex-direction: column;
     white-space: normal;
     text-align: justify;
     justify-content: space-between;
     align-items: flex-end;
+    flex-shrink: 0;
 
     background-color: rgba(255, 255, 255, 0.8);
     
@@ -50,14 +53,40 @@
     border: 10px solid transparent;
 }
 
+.testimonyContent {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.testimonyWriter {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .testimonyName {
     font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #3b3d3c;
     color: #fff;
-    background: #3b3d3c;
+    background: #308ac9;
     padding: 1% 4%;
+    margin: 0;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: fit-content;
+}
+
+.testimonyRelationship {
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #3b3d3c;
+    padding: 0.5% 2%;
+    margin: 0;
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -86,12 +115,56 @@
     background: linear-gradient(90deg, rgba(233, 233, 233, 0) 0%, rgb(255, 255, 255) 100%);
 }
 
+@media (max-width: 1440px) {
+    .testimony {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .testimony {
+        min-width: 200px;
+    }
+
+    .testimonyContent {
+        font-size: 1.1rem;
+    }
+}
 
 @media (max-width: 768px) {
     #testimonySlider h3 {
         font-size: 7.5vw;
     }
 
+    .testimony {
+        min-width: 150px;
+    }
+
+    .testimonyContent {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #testimonySlider h3 {
+        font-size: 10vw;
+    }
+
+    .testimony {
+        min-width: 120px;
+    }
+
+    .testimonyContent {
+        font-size: 0.9rem;
+    }
+
+    .testimonyName {
+        font-size: 0.9rem;
+    }
+
+    .testimonyRelationship {
+        font-size: 0.8rem;
+    }
 }
 
 @keyframes slide {
