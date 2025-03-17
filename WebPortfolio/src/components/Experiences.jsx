@@ -8,51 +8,51 @@ const Experiences = () => {
     const experiencesPhotos = {
         expCard1: {
             photo: "src/assets/img/6-exp1.jpg",
-            text: "Presentador en festival de emprendimiento INCmty"
+            text: `${t('experiencesCard1')}`
         },
         expCard2: {
             photo: "src/assets/img/6-exp2.jpg",
-            text: "Coordinador de campamentos para Secretaría de la Juventud de Querétaro"
+            text: `${t('experiencesCard2')}`
         },
         expCard3: {
             photo: "src/assets/img/6-exp3.jpg",
-            text: "Delegado internacional en “AFS Youth Assembly”"
+            text: `${t('experiencesCard3')}`
         },
         expCard4: {
             photo: "src/assets/img/6-exp4.jpg",
-            text: "Responsable del encuentro del voluntariado del CRIT Puebla"
+            text: `${t('experiencesCard4')}`
         },
         expCard5: {
             photo: "src/assets/img/6-exp5.jpg",
-            text: "Ganador nacional Youth Challenge de UNICEF México"
+            text: `${t('experiencesCard5')}`
         },
         expCard6: {
             photo: "src/assets/img/6-exp6.jpg",
-            text: "Conferencista en congreso de Innovación Social de la UPAEP"
+            text: `${t('experiencesCard6')}`
         },
         expCard7: {
             photo: "src/assets/img/6-exp7.jpg",
-            text: "Coordinador nacional de voluntarios en INCmty"
+            text: `${t('experiencesCard7')}`
         },
         expCard8: {
             photo: "src/assets/img/6-exp8.jpg",
-            text: "Organizador del curso de verano “Raíces”"
+            text: `${t('experiencesCard8')}`
         },
         expCard9: {
             photo: "src/assets/img/6-exp9.jpg",
-            text: "Organizador de la capacitación integral para Embajadores SEJUVE Querétaro"
+            text: `${t('experiencesCard9')}`
         },
         expCard10: {
             photo: "src/assets/img/6-exp10.jpg",
-            text: "Ganador en hackatón en la Universidad de Pennsylvania"
+            text: `${t('experiencesCard10')}`
         },
         expCard11: {
             photo: "src/assets/img/6-exp11.jpg",
-            text: "Creación del podcast de impacto social #De5en5"
+            text: `${t('experiencesCard11')}`
         },
         expCard12: {
             photo: "src/assets/img/6-exp12.jpg",
-            text: "Líder del proyecto de impacto para el Día Nacional de Embajadores"
+            text: `${t('experiencesCard12')}`
         }
     }
 

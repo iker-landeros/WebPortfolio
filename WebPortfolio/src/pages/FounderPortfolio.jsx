@@ -19,7 +19,7 @@ const FounderPortfolio = () => {
             <Experiences />
             {/* <Testimonies /> --> No se agregará hasta estar arreglado */}
             <Keynote />
-            {/* <Contact /> */}
+            <Contact />
         </>
     );
 }

@@ -58,7 +58,24 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 educationalContent: "Minutos de contenido educativo creado",
                 annualImpacts: "Impactos anuales en redes sociales",
                 impactProjects: "Emprendimientos y proyectos de impacto creados",
+
+                // LogoSlider
                 logoSliderTitle: "Han confiado en mí:",
+
+                // Experiences
+                experiencesTitle: "Experiencias",
+                experiencesCard1: "Presentador en festival de emprendimiento INCmty",
+                experiencesCard2: "Coordinador de campamentos para Secretaría de la Juventud de Querétaro",
+                experiencesCard3: "Delegado internacional en “AFS Youth Assembly”",
+                experiencesCard4: "Responsable del encuentro del voluntariado del CRIT Puebla",
+                experiencesCard5: "Ganador nacional Youth Challenge de UNICEF México",
+                experiencesCard6: "Conferencista en congreso de Innovación Social de la UPAEP",
+                experiencesCard7: "Coordinador nacional de voluntarios en INCmty",
+                experiencesCard8: "Organizador del curso de verano “Raíces”",
+                experiencesCard9: "Organizador de la capacitación integral para Embajadores SEJUVE Querétaro",
+                experiencesCard10: "Ganador en hackatón en la Universidad de Pennsylvania",
+                experiencesCard11: "Creación del podcast de impacto social #De5en5",
+                experiencesCard12: "Líder del proyecto de impacto para el Día Nacional de Embajadores",
 
                 // Testimonies
                 testimonySlider: "Esto dicen de mí:",
@@ -162,6 +179,21 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
                 // LogoSlider
                 logoSliderTitle: "Impact partners:",
+
+                // Experiences
+                experiencesTitle: "Experiences",
+                experiencesCard1: "Presenter at INCmty entrepreneurship festival",
+                experiencesCard2: "Coordinator of leadership trainings for the Querétaro Youth Secretariat",
+                experiencesCard3: "International delegate at AFS Youth Assembly",
+                experiencesCard4: "Responsible for the volunteer summit at CRIT Puebla",
+                experiencesCard5: "National winner of UNICEF Mexico's Youth Challenge",
+                experiencesCard6: "Keynote speaker at UPAEP Social Innovation Congress",
+                experiencesCard7: "National volunteer coordinator at INCmty entrepreneurship festival",
+                experiencesCard8: "Organizer of the summer course “Raíces”",
+                experiencesCard9: "Organizer of the integral leader training course for SEJUVE Querétaro Ambassadors",
+                experiencesCard10: "Hackathon winner at the University of Pennsylvania",
+                experiencesCard11: "Creation of the social impact podcast #De5en5",
+                experiencesCard12: "Leader of the massive impact project for National Ambassadors Day",
 
                 // Testimonies
                 testimonySlider: "Testimonies:",
