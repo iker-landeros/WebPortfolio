@@ -80,25 +80,30 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         testimony: "Iker es un gran líder y un gran emprendedor. Me apoyó durante muchos años a desarrollar mi mejor versión y confiar en que todos podemos ser agentes de cambio."
                     },
                     {
-                        name: "",
-                        relationship: "",
-                        testimony: ""
+                        name: "Juan De Luna",
+                        relationship: "Colaborador",
+                        testimony: "Trabajar con Iker es una experiencia muy inspiradora y enriquecedora, sabe cómo hablar con las personas con respeto y educación, además de que siempre encuentra la forma de acompañar y guiar a su equipo para llegar a un objetivo."
                     },
                     {
-                        name: "",
-                        relationship: "",
-                        testimony: ""
+                        name: "Antonella Gispert",
+                        relationship: "Estudiante",
+                        testimony: "He visto lo apasionado que es Iker por su trabajo, el ayudar a gente a fortalecer su liderazgo y dar todo de él por lo que quiere me ha inspirado a hacer lo mismo. Me inspiró a seguir aprendiendo y trabajando en mí y a soltarme cuando se trata de apoyar a la gente."
                     },
                     {
-                        name: "",
-                        relationship: "",
-                        testimony: ""
+                        name: "Serena Amato",
+                        relationship: "Colaboradora",
+                        testimony: "En la Asamblea Juvenil de AFS, presencié el profesionalismo y compromiso de Iker con la ciudadanía global. Su impulso por el cambio positivo y su empatía realmente lo destacan."
                     },
                     {
-                        name: "",
-                        relationship: "",
-                        testimony: ""
+                        name: "Daniela Castrejón",
+                        relationship: "Estudiante",
+                        testimony: "Pocas personas logran llevar su pasión y volverlo todo lo que hoy en día es INSPIRE. Iker y su maravilloso equipo mueven el corazón de las personas y los inspiran a conseguir sus sueños."
                     },
+                    {
+                        name: "Anónimo",
+                        testimony: "Íker es una persona apasionada, su entusiasmo transforma cualquier espacio en un lugar lleno de motivación y buena energía."
+                    }
+                    
                 ],
             },
         },
@@ -170,6 +175,35 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         name: "Fernanda Román",
                         relationship: "Collaborator",
                         testimony: "Collaborating with Iker was very rewarding, due to his leadership and teamwork skills."
+                    },
+                    {
+                        name: "José Pablo Ramos",
+                        relationship: "Student",
+                        testimony: "Iker is a great leader and a great entrepreneur. He supported me for many years to develop my best version and trust that we can all be agents of change."
+                    },
+                    {
+                        name: "Juan De Luna",
+                        relationship: "Collaborator",
+                        testimony: "Working with Iker is a very inspiring and enriching experience, he knows how to talk to people with respect and education, in addition to always finding a way to accompany and guide his team to reach an objective."
+                    },
+                    {
+                        name: "Antonella Gispert",
+                        relationship: "Student",
+                        testimony: "I have seen how passionate Iker is about his work, helping people strengthen their leadership and giving everything he has for what he wants has inspired me to do the same. He inspired me to continue learning and working on myself and to let go when it comes to supporting people."
+                    },
+                    {
+                        name: "Serena Amato",
+                        relationship: "Collaborator",
+                        testimony: "At the AFS Youth Assembly, I witnessed Iker’s professionalism and commitment to global citizenship. His drive for positive change and his empathy truly set him apart."
+                    },
+                    {
+                        name: "Daniela Castrejón",
+                        relationship: "Student",
+                        testimony: "Few people manage to take their passion and turn it into everything that INSPIRE is today. Iker and his wonderful team move people's hearts and inspire them to achieve their dreams."
+                    },
+                    {
+                        name: "Anonymous",
+                        testimony: "Íker is a passionate person, his enthusiasm transforms any space into a place full of motivation and good energy."
                     }
                 ],
             },
