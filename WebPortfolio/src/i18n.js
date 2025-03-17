@@ -104,6 +104,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         testimony: "Íker es una persona apasionada, su entusiasmo transforma cualquier espacio en un lugar lleno de motivación y buena energía."
                     }
                 ],
+
+                keynoteTitle: "¡Revive una de mis conferencias!",
             },
         },
         en: {
@@ -205,6 +207,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         testimony: "Íker is a passionate person, his enthusiasm transforms any space into a place full of motivation and good energy."
                     }
                 ],
+
+                keynoteTitle: "Relive one of my keynotes!",
             },
         },
     },

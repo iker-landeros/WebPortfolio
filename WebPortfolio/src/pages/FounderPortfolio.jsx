@@ -5,6 +5,7 @@ import Impact from '../components/Impact';
 import LogoSlider from '../components/LogoSlider';
 import Experiences from '../components/Experiences';
 import Testimonies from '../components/Testimonies';
+import Keynote from '../components/Keynote';
 
 const FounderPortfolio = () => {
     return (
@@ -15,7 +16,8 @@ const FounderPortfolio = () => {
             <Impact />
             <LogoSlider />
             <Experiences />
-            <Testimonies />
+            {/* <Testimonies /> --> No se agregará hasta estar arreglado */}
+            <Keynote/>
         </>
     );
 }
