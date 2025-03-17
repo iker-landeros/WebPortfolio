@@ -58,7 +58,7 @@ const Experiences = () => {
 
     return (
         <section id="experiences">
-            <h3>Experiencias que me han inspirado</h3>
+            <h3>{t('experiencesTitle')}</h3>
 
             <div className="experiencesCards">
                 {Object.keys(experiencesPhotos).map((key, index) => (
