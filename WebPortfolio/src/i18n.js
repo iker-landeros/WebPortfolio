@@ -103,7 +103,6 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         name: "Anónimo",
                         testimony: "Íker es una persona apasionada, su entusiasmo transforma cualquier espacio en un lugar lleno de motivación y buena energía."
                     }
-                    
                 ],
             },
         },

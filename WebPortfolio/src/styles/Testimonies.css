@@ -4,7 +4,7 @@
     box-sizing: border-box;
     position: relative;
     padding: 4% 5%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: #E9E9E9; */
     white-space: nowrap;
 
@@ -28,7 +28,7 @@
     box-sizing: border-box;
     display: inline-flex;
     
-    /* animation: 10s slide linear infinite; */
+    /* animation: 2s slide linear infinite; */
 }
 
 .testimony {

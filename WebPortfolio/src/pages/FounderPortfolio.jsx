@@ -9,12 +9,12 @@ import Testimonies from '../components/Testimonies';
 const FounderPortfolio = () => {
     return (
         <>
-            {/* <Header />
+            <Header />
             <About />
             <Methodology />
             <Impact />
             <LogoSlider />
-            <Experiences /> */}
+            <Experiences />
             <Testimonies />
         </>
     );
