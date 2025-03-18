@@ -122,7 +122,21 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     }
                 ],
 
+                // Keynote
                 keynoteTitle: "¡Revive una de mis conferencias!",
+
+                // Contact
+                contactTitle: "¡Trabajemos juntos!",
+                contactName: "Nombre",
+                contactEmail: "Tu correo electrónico",
+                contactMessage: "Platícame cómo podemos colaborar",
+                contactButton: "Enviar",
+                contactConfirmation: "¡Gracias por tu mensaje! Me pondré en contacto contigo lo más pronto posible.",
+                contactAlert: "¡Ups! Algo salió mal. Por favor, intenta de nuevo.",
+                contactIncomplete: "Por favor, llena todos los campos antes de enviar tu mensaje.",
+
+                // Footer
+                footerText: "Desarrollado por Iker Landeros | 2025",
             },
         },
         en: {
@@ -240,7 +254,21 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     }
                 ],
 
+                // Keynote
                 keynoteTitle: "Relive one of my keynotes!",
+
+                // Contact
+                contactTitle: "Let's work together!",
+                contactName: "Name",
+                contactEmail: "Your email",
+                contactMessage: "Tell me how we can collaborate",
+                contactButton: "Send",
+                contactConfirmation: "Thank you for your message! I will contact you as soon as possible.",
+                contactAlert: "Oops! Something went wrong. Please try again.",
+                contactIncomplete: "Please fill out all fields before sending your message.",
+
+                // Footer
+                footerText: "Developed by Iker Landeros | 2025",
             },
         },
     },
