@@ -71,7 +71,7 @@ textarea {
 }
 
 #contact input:focus,
-textarea:focus {
+textarea:focus, button:focus {
     outline: none;
 }
 
