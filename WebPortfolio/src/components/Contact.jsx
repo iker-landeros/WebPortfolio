@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import Box from '@mui/material/Box';
@@ -10,9 +10,35 @@ const Contact = () => {
     const { t } = useTranslation();
     const form = useRef();
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [isValid, setIsValid] = useState(false);
+    
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+    const validateForm = () => {
+        const nameRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,}$/; // Solo letras y espacios, mínimo 2 caracteres
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Validación básica de email
+
+        const isValidName = nameRegex.test(name);
+        const isValidEmail = email.length >= 8 && emailRegex.test(email);
+        const isValidMessage = message.length >= 10;
+
+        setIsValid(isValidName && isValidEmail && isValidMessage);
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        if (name === 'name') setName(value);
+        if (name === 'email') setEmail(value);
+        if (name === 'message') setMessage(value);
+
+        validateForm();
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -54,17 +80,17 @@ const Contact = () => {
                     <form className="contactForm" ref={form} onSubmit={sendEmail}>
                         <div className="inputContainer">
                             <div className="inputLeft">
-                                <h5>{t('contactName')}</h5>
-                                <input type="text" placeholder='...' name="name" />
-                                <h5>{t('contactEmail')}</h5>
-                                <input type="email" placeholder='...' name="email" />
+                                <label>{t('contactName')}</label>
+                                <input type="text" placeholder='...' name="name" value={name} onChange={handleChange} />
+                                <label>{t('contactEmail')}</label>
+                                <input type="email" placeholder='...' name="email" value={email} onChange={handleChange} />
                             </div>
                             <div className="inputRight">
-                                <h5>{t('contactMessage')}</h5>
-                                <textarea placeholder='...' name="message" ></textarea>
+                                <label>{t('contactMessage')}</label>
+                                <textarea placeholder='...' name="message" value={message} onChange={handleChange} ></textarea>
                             </div>
                         </div>
-                        <button className="submitButton" type="submit" onClick={handleOpen}>{t('contactButton')}</button>
+                        <button className="submitButton" type="submit" onClick={handleOpen} disabled={!isValid}>{t('contactButton')}</button>
                     </form>
 
                     <Modal
