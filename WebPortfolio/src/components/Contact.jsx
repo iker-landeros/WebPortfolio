@@ -15,17 +15,26 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [isValid, setIsValid] = useState(false);
-    
+    const [errors, setErrors] = useState({});
+
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     const validateForm = () => {
-        const nameRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,}$/; // Solo letras y espacios, mínimo 2 caracteres
+        const nameRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{5,}$/; // Solo letras y espacios, mínimo 2 caracteres
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Validación básica de email
 
         const isValidName = nameRegex.test(name);
         const isValidEmail = email.length >= 8 && emailRegex.test(email);
         const isValidMessage = message.length >= 10;
+
+        let errors = {};
+
+        if (!isValidName) errors.name = 'Text';
+        if (!isValidEmail) errors.email = 'Text';
+        if (!isValidMessage) errors.message = 'Text';
+
+        setErrors(errors);
 
         setIsValid(isValidName && isValidEmail && isValidMessage);
     };
@@ -41,7 +50,10 @@ const Contact = () => {
     }
 
     const sendEmail = (e) => {
+        console.log('Sending email...');
         e.preventDefault();
+
+        // if (!validateForm()) return;
 
         emailjs
             .sendForm('service_y2xen73', 'template_efqkazx', form.current, {
@@ -50,6 +62,16 @@ const Contact = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    // ✅ Vaciar manualmente los estados
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+
+                    // ✅ También limpiamos errores
+                    setErrors({});
+
+                    // ✅ Llamamos a la validación para reflejar los cambios
+                    setIsValid(false);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -68,7 +90,7 @@ const Contact = () => {
         boxShadow: 24,
         p: 4,
         borderRadius: '30px',
-      };
+    };
 
     return (
         <section id="contact">
@@ -82,12 +104,16 @@ const Contact = () => {
                             <div className="inputLeft">
                                 <label>{t('contactName')}</label>
                                 <input type="text" placeholder='...' name="name" value={name} onChange={handleChange} />
+                                {errors.name && <p className="error">{t('nameError')}</p>}
+
                                 <label>{t('contactEmail')}</label>
                                 <input type="email" placeholder='...' name="email" value={email} onChange={handleChange} />
+                                {errors.email && <p className="error">{t('emailError')}</p>}
                             </div>
                             <div className="inputRight">
                                 <label>{t('contactMessage')}</label>
                                 <textarea placeholder='...' name="message" value={message} onChange={handleChange} ></textarea>
+                                {errors.message && <p className="error">{t('messageError')}</p>}
                             </div>
                         </div>
                         <button className="submitButton" type="submit" onClick={handleOpen} disabled={!isValid}>{t('contactButton')}</button>

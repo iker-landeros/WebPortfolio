@@ -81,6 +81,16 @@ textarea:focus, button:focus {
     border-radius: 10px;
 }
 
+.error {
+    color: #f6c646;
+    font-size: 1rem;
+    font-family: 'D-DIN', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+    font-weight: normal;
+    margin: 0 0 2%;
+    width: fit-content;
+    border-radius: 100vw;
+}
+
 .submitButton {
     box-sizing: border-box;
     width: 30%;
@@ -94,6 +104,16 @@ textarea:focus, button:focus {
     cursor: pointer;
     align-items: end;
     margin: 2% 0;
+}
+
+.submitButton:hover {
+    background-color: #3382ba;
+}
+
+.submitButton:disabled {
+    background-color: #3b3d3cdc;
+    background-color: #3089c983;
+    cursor: not-allowed;
 }
 
 .formImage {

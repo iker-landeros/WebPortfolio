@@ -136,6 +136,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 contactIncomplete: "Por favor, llena todos los campos antes de enviar tu mensaje.",
                 modalTitle: "¡Gracias!",
                 modalConfirmation: "Tu mensaje se ha enviado correctamente.",
+                nameError: "Por favor, introduce un nombre válido.",
+                emailError: "Por favor, introduce un correo electrónico válido.",
+                messageError: "Por favor, introduce un mensaje válido.",
 
                 // Footer
                 footerText: "Desarrollado por Iker Landeros | 2025",
@@ -270,6 +273,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 contactIncomplete: "Please fill out all fields before sending your message.",
                 modalTitle: "Thank you!",
                 modalConfirmation: "Your message has been sent successfully.",
+                nameError: "Please enter a valid name.",
+                emailError: "Please enter a valid email.",
+                messageError: "Please enter a valid message.",
 
                 // Footer
                 footerText: "Developed by Iker Landeros | 2025",
