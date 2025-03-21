@@ -134,6 +134,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 contactConfirmation: "¡Gracias por tu mensaje! Me pondré en contacto contigo lo más pronto posible.",
                 contactAlert: "¡Ups! Algo salió mal. Por favor, intenta de nuevo.",
                 contactIncomplete: "Por favor, llena todos los campos antes de enviar tu mensaje.",
+                modalTitle: "¡Gracias!",
+                modalConfirmation: "Tu mensaje se ha enviado correctamente.",
 
                 // Footer
                 footerText: "Desarrollado por Iker Landeros | 2025",
@@ -266,6 +268,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 contactConfirmation: "Thank you for your message! I will contact you as soon as possible.",
                 contactAlert: "Oops! Something went wrong. Please try again.",
                 contactIncomplete: "Please fill out all fields before sending your message.",
+                modalTitle: "Thank you!",
+                modalConfirmation: "Your message has been sent successfully.",
 
                 // Footer
                 footerText: "Developed by Iker Landeros | 2025",

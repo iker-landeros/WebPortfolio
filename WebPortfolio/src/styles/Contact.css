@@ -102,6 +102,22 @@ textarea:focus, button:focus {
     object-fit: cover;
 }
 
+.modalTitle {
+    font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 2%;
+    color: #000000;
+}
+
+.modalConfirmation {
+    font-family: 'D-DIN', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0 0 2%;
+    color: #000000;
+}
+
 .contactButtons {
     display: flex;
     justify-content: flex-start;
