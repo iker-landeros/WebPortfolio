@@ -1,0 +1,14 @@
+<svg id="Cuadrado" xmlns="http://www.w3.org/2000/svg" width="628" height="776" viewBox="0 0 628 776">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+    fill: #fff;
+    fill-rule: evenodd;
+  }
+    </style>
+  </defs>
+  <path id="Cuadrado-2" data-name="Cuadrado" class="cls-1" d="M91,776.344H511V-0.022H91V776.344Zm23-24.98H488V25.957H114V751.364Z"/>
+  <path id="Cápsula_1" data-name="Cápsula 1" class="cls-2" d="M41.024,429.624H274a41,41,0,0,1,41,41v0.981a41,41,0,0,1-41,41H41.024a41,41,0,0,1-41-41v-0.981A41,41,0,0,1,41.024,429.624Z"/>
+  <path id="Cápsula_2" data-name="Cápsula 2" class="cls-3" d="M184.852,309.2H417.828a41,41,0,0,1,41,41v0.981a41,41,0,0,1-41,41H184.852a41,41,0,0,1-41-41V350.2A41,41,0,0,1,184.852,309.2Z"/>
+  <path id="Cápsula_3" data-name="Cápsula 3" class="cls-4" d="M354,188.778H586.976a41,41,0,0,1,41,41v0.981a41,41,0,0,1-41,41H354a41,41,0,0,1-41-41v-0.981A41,41,0,0,1,354,188.778Z"/>
+</svg>
