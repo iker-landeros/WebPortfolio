@@ -18,6 +18,9 @@ const Footer = () => {
                     <div className='capsuleBlue'></div>
                     <div className='capsuleYellow'></div>
                 </div>
+                <div className="codePortfolio">
+                        {/* <a href="/code">{t("codePortfolio")}</a> */}
+                </div>
             </footer>
         </section>
     );

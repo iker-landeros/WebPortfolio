@@ -40,7 +40,7 @@ const Header = () => {
                     </div>
 
                     <div className="codePortfolio">
-                        <a href="">{t("codePortfolio")}</a>
+                        {/* <a href="/code">{t("codePortfolio")}</a> */}
                     </div>
                 </div>
             </div>
