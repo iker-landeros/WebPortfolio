@@ -53,8 +53,6 @@ const Contact = () => {
         console.log('Sending email...');
         e.preventDefault();
 
-        // if (!validateForm()) return;
-
         emailjs
             .sendForm('service_y2xen73', 'template_efqkazx', form.current, {
                 publicKey: 'e3026VJauNlGvO6OG',
@@ -62,15 +60,12 @@ const Contact = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
-                    // ✅ Vaciar manualmente los estados
                     setName('');
                     setEmail('');
                     setMessage('');
 
-                    // ✅ También limpiamos errores
                     setErrors({});
 
-                    // ✅ Llamamos a la validación para reflejar los cambios
                     setIsValid(false);
                 },
                 (error) => {
@@ -101,20 +96,22 @@ const Contact = () => {
                     <h3>{t('contactTitle')}</h3>
                     <form className="contactForm" ref={form} onSubmit={sendEmail}>
                         <div className="inputContainer">
-                            <div className="inputLeft">
-                                <label>{t('contactName')}</label>
-                                <input type="text" placeholder='...' name="name" value={name} onChange={handleChange} />
-                                {errors.name && <p className="error">{t('nameError')}</p>}
 
-                                <label>{t('contactEmail')}</label>
-                                <input type="email" placeholder='...' name="email" value={email} onChange={handleChange} />
-                                {errors.email && <p className="error">{t('emailError')}</p>}
-                            </div>
-                            <div className="inputRight">
-                                <label>{t('contactMessage')}</label>
-                                <textarea placeholder='...' name="message" value={message} onChange={handleChange} ></textarea>
-                                {errors.message && <p className="error">{t('messageError')}</p>}
-                            </div>
+                            <label>{t('contactName')}
+                            {errors.name && <p className="error">{t('nameError')}</p>}
+                            </label>
+                            <input type="text" placeholder='...' name="name" value={name} onChange={handleChange} />
+
+                            <label>{t('contactEmail')}
+                            {errors.email && <p className="error">{t('emailError')}</p>}
+                            </label>
+                            <input type="email" placeholder='...' name="email" value={email} onChange={handleChange} />
+
+                            <label>{t('contactMessage')}
+                            {errors.message && <p className="error">{t('messageError')}</p>}
+                            </label>
+                            <textarea placeholder='...' name="message" value={message} onChange={handleChange} ></textarea>
+
                         </div>
                         <button className="submitButton" type="submit" onClick={handleOpen} disabled={!isValid}>{t('contactButton')}</button>
                     </form>
@@ -132,7 +129,9 @@ const Contact = () => {
                     </Modal>
                 </div>
 
-                <img className="formImage" src="src\assets\img\0-head.webp" alt="Iker Landeros Keynote Speaker" />
+                <div className="formRight">
+                    <img className="formImage" src="src\assets\img\0-head.webp" alt="Iker Landeros Keynote Speaker" />
+                </div>
             </div>
 
             <div className="contactButtons">
