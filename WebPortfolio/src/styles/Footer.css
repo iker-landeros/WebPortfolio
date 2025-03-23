@@ -1,0 +1,65 @@
+/*Footer*/
+
+#footer {
+    box-sizing: border-box;
+    position: relative;
+    padding: 4% 5%;
+    /* overflow: hidden; */
+    background-color: #000000;
+
+    /* Background */
+    /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='600' height='140' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='600' height='140' x='0' y='0' style='fill:%23000%3B' /%3E %3Crect width='190' height='50' x='0' y='0' rx='30' ry='30' style='fill:%23f6c646%3B opacity: 0.1%3B' /%3E %3Crect width='190' height='50' x='200' y='0' rx='30' ry='30' style='fill:%23308ac9%3B opacity: 0.1%3B' /%3E %3Crect width='190' height='50' x='400' y='0' rx='30' ry='30' style='fill:%23a5241f%3B opacity: 0.1%3B' /%3E %3Crect width='190' height='50' x='-100' y='70' rx='30' ry='30' style='fill:%23308ac9%3B opacity: 0.1%3B' /%3E %3Crect width='190' height='50' x='100' y='70' rx='30' ry='30' style='fill:%23a5241f%3B opacity: 0.1%3B' /%3E %3Crect width='190' height='50' x='300' y='70' rx='30' ry='30' style='fill:%23f6c646%3B opacity: 0.1%3B' /%3E %3Crect width='190' height='50' x='500' y='70' rx='30' ry='30' style='fill:%23308ac9%3B opacity: 0.1%3B' /%3E %3C/svg%3E"); */
+    /* SVG encoded with https://cdpn.io/rrOZQQ */
+    /* background-repeat: repeat;
+    animation: animatedBackground 70s linear infinite; */
+    overflow: hidden;
+}
+
+#footer h3 {
+    font-family: 'D-DIN Bold', system-ui, 'Montserrat', 'Segoe UI', sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.capsuleRed {
+    background-color: #a5241f;
+    height: 10vw;
+    width: 40vw;
+    border-radius: 100vh;
+    position: absolute;
+    top: 6vw;
+    left: -20vw;
+}
+
+.capsuleBlue {
+    background-color: #308ac9;
+    height: 7vw;
+    width: 28vw;
+    border-radius: 100vh;
+    position: absolute;
+    top: -1vw;
+    right: -10vw;
+
+    /* Permitir overflow solo en la parte superior */
+    clip-path: inset(-10vw 0 0 0);
+}
+
+.capsuleYellow {
+    background-color: #f6c646;
+    height: 4vw;
+    width: 15vw;
+    border-radius: 100vh;
+    position: absolute;
+    bottom: -1.3vw;
+    right: 10vw;
+}
+
+@media (max-width: 500px) {
+    #footer h3 {
+        font-size: 3.8vw;
+    }
+}

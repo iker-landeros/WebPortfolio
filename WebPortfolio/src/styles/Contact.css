@@ -1,4 +1,4 @@
-/*EXPERIENCES*/
+/*CONTACT*/
 
 #contact {
     box-sizing: border-box;
@@ -186,8 +186,4 @@ textarea:focus, button:focus {
     .formRight {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
-    
 }

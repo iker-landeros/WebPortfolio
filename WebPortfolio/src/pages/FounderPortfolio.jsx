@@ -7,6 +7,7 @@ import Experiences from '../components/Experiences';
 import Testimonies from '../components/Testimonies';
 import Keynote from '../components/Keynote';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const FounderPortfolio = () => {
     return (
@@ -20,6 +21,7 @@ const FounderPortfolio = () => {
             {/* <Testimonies /> --> No se agregará hasta estar arreglado */}
             <Keynote />
             <Contact />
+            <Footer />
         </>
     );
 }
