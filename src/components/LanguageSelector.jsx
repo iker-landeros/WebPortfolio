@@ -53,7 +53,7 @@ const LanguageSelector = () => {
         id="currentLanguage"
         onClick={toggleLanguageOptions}
       >
-        <img src={`src/assets/img/${currentLanguage.flag}`} alt={currentLanguage.code} className="flag" />
+        <img src={`assets/img/${currentLanguage.flag}`} alt={currentLanguage.code} className="flag" />
         <span>{currentLanguage.code}</span>
         <i className={`fa-solid fa-chevron-down ${isLanguageOptionsVisible ? 'visible' : ''}`}></i>
       </div>
@@ -69,7 +69,7 @@ const LanguageSelector = () => {
               className="language-option"
               onClick={() => handleLanguageChange(lang.code)}
             >
-              <img src={`src/assets/img/${lang.flag}`} alt={lang.code} className="flag" />
+              <img src={`assets/img/${lang.flag}`} alt={lang.code} className="flag" />
               <span>{lang.code}</span>
             </div>
           ))}

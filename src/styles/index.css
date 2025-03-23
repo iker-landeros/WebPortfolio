@@ -5,12 +5,12 @@ html {
 
 @font-face {
   font-family: 'D-DIN Bold';
-  src: url('src/assets/fonts/D-DINbold.otf');
+  src: url('assets/fonts/D-DINbold.otf');
 }
 
 @font-face {
   font-family: 'D-DIN';
-  src: url('src/assets/fonts/D-DIN.otf');
+  src: url('assets/fonts/D-DIN.otf');
 }
 
 :root {

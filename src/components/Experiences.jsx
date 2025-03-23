@@ -63,7 +63,7 @@ const Experiences = () => {
             <div className="experiencesCards">
                 {Object.keys(experiencesPhotos).map((key, index) => (
                     <div className={"expCardContainer " + key}>
-                        <img src={experiencesPhotos[key].photo} alt={`Experiencia ${index + 1}: ${[key].text}`} />
+                        <img src={experiencesPhotos[key].photo} alt={[key].text} />
                         
                         <div className="expText">
                             {experiencesPhotos[key].text}
