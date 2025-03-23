@@ -7,7 +7,7 @@ const About = () => {
 
     return (
         <section id="about">
-            <img src="src/assets/img/1-about.jpg" alt="Iker Landeros"></img>
+            <img src="assets/img/1-about.jpg" alt="Iker Landeros"></img>
             <div className="aboutText">
                 <h2>{t('aboutTitle')}</h2>
                 <br></br>

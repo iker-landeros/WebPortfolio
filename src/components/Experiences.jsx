@@ -7,51 +7,51 @@ const Experiences = () => {
 
     const experiencesPhotos = {
         expCard1: {
-            photo: "src/assets/img/6-exp1.jpg",
+            photo: "assets/img/6-exp1.jpg",
             text: `${t('experiencesCard1')}`
         },
         expCard2: {
-            photo: "src/assets/img/6-exp2.jpg",
+            photo: "assets/img/6-exp2.jpg",
             text: `${t('experiencesCard2')}`
         },
         expCard3: {
-            photo: "src/assets/img/6-exp3.jpg",
+            photo: "assets/img/6-exp3.jpg",
             text: `${t('experiencesCard3')}`
         },
         expCard4: {
-            photo: "src/assets/img/6-exp4.jpg",
+            photo: "assets/img/6-exp4.jpg",
             text: `${t('experiencesCard4')}`
         },
         expCard5: {
-            photo: "src/assets/img/6-exp5.jpg",
+            photo: "assets/img/6-exp5.jpg",
             text: `${t('experiencesCard5')}`
         },
         expCard6: {
-            photo: "src/assets/img/6-exp6.jpg",
+            photo: "assets/img/6-exp6.jpg",
             text: `${t('experiencesCard6')}`
         },
         expCard7: {
-            photo: "src/assets/img/6-exp7.jpg",
+            photo: "assets/img/6-exp7.jpg",
             text: `${t('experiencesCard7')}`
         },
         expCard8: {
-            photo: "src/assets/img/6-exp8.jpg",
+            photo: "assets/img/6-exp8.jpg",
             text: `${t('experiencesCard8')}`
         },
         expCard9: {
-            photo: "src/assets/img/6-exp9.jpg",
+            photo: "assets/img/6-exp9.jpg",
             text: `${t('experiencesCard9')}`
         },
         expCard10: {
-            photo: "src/assets/img/6-exp10.jpg",
+            photo: "assets/img/6-exp10.jpg",
             text: `${t('experiencesCard10')}`
         },
         expCard11: {
-            photo: "src/assets/img/6-exp11.jpg",
+            photo: "assets/img/6-exp11.jpg",
             text: `${t('experiencesCard11')}`
         },
         expCard12: {
-            photo: "src/assets/img/6-exp12.jpg",
+            photo: "assets/img/6-exp12.jpg",
             text: `${t('experiencesCard12')}`
         }
     }

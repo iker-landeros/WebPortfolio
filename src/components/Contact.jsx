@@ -130,7 +130,7 @@ const Contact = () => {
                 </div>
 
                 <div className="formRight">
-                    <img className="formImage" src="src\assets\img\0-head.webp" alt="Iker Landeros Keynote Speaker" />
+                    <img className="formImage" src="assets\img\0-head.webp" alt="Iker Landeros Keynote Speaker" />
                 </div>
             </div>
 
