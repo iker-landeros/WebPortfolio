@@ -11,7 +11,7 @@ const Experiences = () => {
             text: `${t('experiencesCard1')}`
         },
         expCard2: {
-            photo: "assets/img/6-exp2.jpg",
+            photo: "assets/img/6-exp2.JPG",
             text: `${t('experiencesCard2')}`
         },
         expCard3: {
@@ -63,7 +63,7 @@ const Experiences = () => {
             <div className="experiencesCards">
                 {Object.keys(experiencesPhotos).map((key, index) => (
                     <div className={"expCardContainer " + key}>
-                        <img src={experiencesPhotos[key].photo} alt={[key].text} />
+                        <img src={experiencesPhotos[key].photo} alt="Experience image" />
                         
                         <div className="expText">
                             {experiencesPhotos[key].text}
