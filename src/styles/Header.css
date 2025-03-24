@@ -5,8 +5,8 @@
   content: "";
   top: 0;
   left: 0;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100lvh;
   background-image: url('/assets/img/0-head.webp');
   background-color: #000;
   background-size: cover;
@@ -28,7 +28,7 @@
 /* ------- Header Top ------- */
 .headTop {
   box-sizing: border-box;
-  height: 10dvh;
+  height: 10lvh;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
@@ -44,7 +44,7 @@
 /* ------- Header Middle Text ------- */
 .headText {
   box-sizing: border-box;
-  height: 70dvh;
+  height: 70lvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
