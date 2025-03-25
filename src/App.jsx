@@ -4,7 +4,7 @@ import './styles/App.css'
 import { Analytics } from '@vercel/analytics/react';
 
 import FounderPortfolio from './pages/FounderPortfolio'
-import Header from './components/Header';
+import CodePortfolio from './pages/CodePortfolio'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<FounderPortfolio />} />
-          <Route path="header" element={<FounderPortfolio />} />
+          <Route path="code" element={<CodePortfolio />} />
           <Route path="*" element={<FounderPortfolio />} />
         </Routes>
       </BrowserRouter>
