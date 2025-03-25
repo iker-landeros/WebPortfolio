@@ -34,7 +34,7 @@ const Header = () => {
                         <a href="https://www.tiktok.com/@iker_landeros" target="_blank" className="tiktok">
                             <i className="fab fa-tiktok"></i>
                         </a>
-                        <a href="https://generacioninspire.com/" target="_blank" className="genInspire">
+                        <a href="https://www.instagram.com/generacioninspire/" target="_blank" className="genInspire">
                             <img src="assets\logos\0logoInsigniaGenINSPIRE.svg" alt="Generación INSPIRE" className="genInspire" />
                         </a>
                     </div>
