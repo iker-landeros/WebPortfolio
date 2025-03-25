@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './styles/App.css'
 import { Analytics } from '@vercel/analytics/react';
 
@@ -8,7 +10,12 @@ function App() {
 
   return (
     <>
-      <FounderPortfolio />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FounderPortfolio />} />
+          <Route path="*" element={<FounderPortfolio />} />
+        </Routes>
+      </BrowserRouter>
       <Analytics />
     </>
   )
