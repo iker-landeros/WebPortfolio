@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<FounderPortfolio />} />
-          <Route path="code" element={<CodePortfolio />} />
+          {/* <Route path="code" element={<CodePortfolio />} /> */}
           <Route path="*" element={<FounderPortfolio />} />
         </Routes>
       </BrowserRouter>
